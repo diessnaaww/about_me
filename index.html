@@ -23,47 +23,47 @@
         </button>
 
         <div class="nav-links" id="nav-links">
-  <!-- BERANDA -->
-  <div class="nav-dropdown">
-    <button class="nav-dropdown-trigger" type="button" aria-expanded="false" aria-controls="home-menu">
-      <span data-i18n="navHome">Beranda</span><span class="chevron" aria-hidden="true">▾</span>
-    </button>
-    <div class="dropdown-menu" id="home-menu">
-      <a href="#about" data-i18n="navAbout">Tentang Saya</a>
-      <a href="#education" data-i18n="navEducation">Pendidikan</a>
-      <div class="nested-dropdown">
-        <button class="nested-trigger" type="button" aria-expanded="false" aria-controls="experience-menu">
-          <span data-i18n="navExperience">Pengalaman</span><span class="side-chevron" aria-hidden="true">▹</span>
-        </button>
-        <div class="nested-menu" id="experience-menu">
-          <a href="#work-exp" data-i18n="navWork">Pengalaman Kerja</a>
-          <a href="#org-exp" data-i18n="navOrg">Pengalaman Organisasi</a>
+          <!-- BERANDA -->
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger" type="button" aria-expanded="false" aria-controls="home-menu">
+              <span data-i18n="navHome">Beranda</span><span class="chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="dropdown-menu" id="home-menu">
+              <a href="#about" data-i18n="navAbout">Tentang Saya</a>
+              <a href="#education" data-i18n="navEducation">Pendidikan</a>
+              <div class="nested-dropdown">
+                <button class="nested-trigger" type="button" aria-expanded="false" aria-controls="experience-menu">
+                  <span data-i18n="navExperience">Pengalaman</span><span class="side-chevron" aria-hidden="true">▹</span>
+                </button>
+                <div class="nested-menu" id="experience-menu">
+                  <a href="#work-exp" data-i18n="navWork">Pengalaman Kerja</a>
+                  <a href="#org-exp" data-i18n="navOrg">Pengalaman Organisasi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STUDIO KARYA -->
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger" type="button" aria-expanded="false" aria-controls="studio-menu">
+              <span data-i18n="navStudio">Studio</span><span class="chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="dropdown-menu" id="studio-menu">
+              <a href="#studio-proyek" data-i18n="navTechnical">Proyek Technical</a>
+              <a href="#studio-desain" data-i18n="navCreative">Desain &amp; Content</a>
+            </div>
+          </div>
+
+          <!-- SERTIFIKASI -->
+          <a class="nav-direct" href="#certifications" data-i18n="navCertifications">Sertifikasi</a>
+
+          <!-- KONTAK -->
+          <a class="nav-direct" href="#contact" data-i18n="navContact">Kontak</a>
+
+          <!-- PEMISAH & TOMBOL SERVICES TERPISAH -->
+          <span class="nav-divider" aria-hidden="true" style="opacity: 0.25; margin: 0 0.25rem;">|</span>
+          <a class="nav-direct nav-services-btn" href="services.html" data-i18n="navServices" style="color: #64ffda; border: 1px solid #64ffda; padding: 0.35rem 0.85rem; border-radius: 6px; font-weight: 600;">Services</a>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- STUDIO KARYA -->
-  <div class="nav-dropdown">
-    <button class="nav-dropdown-trigger" type="button" aria-expanded="false" aria-controls="studio-menu">
-      <span data-i18n="navStudio">Studio</span><span class="chevron" aria-hidden="true">▾</span>
-    </button>
-    <div class="dropdown-menu" id="studio-menu">
-      <a href="#studio-proyek" data-i18n="navTechnical">Proyek Technical</a>
-      <a href="#studio-desain" data-i18n="navCreative">Desain &amp; Content</a>
-    </div>
-  </div>
-
-  <!-- SERTIFIKASI -->
-  <a class="nav-direct" href="#certifications" data-i18n="navCertifications">Sertifikasi</a>
-
-  <!-- KONTAK -->
-  <a class="nav-direct" href="#contact" data-i18n="navContact">Kontak</a>
-
-  <!-- PEMISAH & TOMBOL SERVICES TERPISAH -->
-  <span class="nav-divider" aria-hidden="true" style="opacity: 0.25; margin: 0 0.25rem;">|</span>
-  <a class="nav-direct nav-services-btn" href="services.html" data-i18n="navServices" style="color: #64ffda; border: 1px solid #64ffda; padding: 0.35rem 0.85rem; border-radius: 6px; font-weight: 600;">Services</a>
-</div>
 
         <div class="nav-controls">
           <div class="language-switch" role="group" aria-label="Pilih bahasa">
@@ -80,6 +80,7 @@
     </header>
 
     <main id="main">
+      <!-- HERO SECTION -->
       <section class="hero container" id="home">
         <div class="hero-copy reveal">
           <p class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">TERBUKA UNTUK PELUANG KOLABORASI</span></p>
@@ -87,53 +88,17 @@
           <p class="hero-subtitle" data-i18n="heroSubtitle">Perencanaan Regional | Analitik Data | Administrasi | Pemasaran Digital</p>
           <p class="hero-tagline" data-i18n="heroTagline">Mengubah Data menjadi Wawasan, Perencanaan menjadi Dampak.</p>
           
-<!-- Tombol Pemicu di Hero Section -->
-<div class="hero-actions">
-  <a class="button button-primary" href="https://www.linkedin.com/in/adiestinuriaa" target="_blank" rel="noopener noreferrer">
-    <span>Profil LinkedIn</span>
-    <span aria-hidden="true">↗</span>
-  </a>
-  
-  <button class="button button-secondary" type="button" onclick="openCVPreview('id')">
-    <span data-i18n="viewCv">Curriculum Vitae</span>
-    <span aria-hidden="true">👁</span>
-  </button>
-</div>
-
-<!-- MODAL PRATINJAU CV DUAL BAHASA (INDONESIA & INGGIS) -->
-<dialog id="cv-preview-dialog" class="document-dialog" aria-labelledby="cv-preview-title">
-  <div class="dialog-panel document-panel" style="max-width: 900px; background: #0a192f; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; padding: 1.5rem; color: #ffffff;">
-    
-    <!-- Header Modal -->
-    <div class="preview-heading" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1); flex-wrap: wrap; gap: 0.5rem;">
-      <div>
-        <p class="eyebrow" style="color: #fbbf24; margin: 0; font-size: 0.75rem; font-weight: 600;">🔒 PROTECTED PREVIEW</p>
-        <h2 id="cv-preview-title" style="margin: 0; font-size: 1.2rem; color: #ffffff;">Curriculum Vitae — Adiesti Nuri Amanda</h2>
-      </div>
-      <button class="dialog-close icon-button" type="button" onclick="closeCVPreview()" aria-label="Tutup" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
-    </div>
-
-    <!-- Tombol Pengalih Bahasa CV -->
-    <div class="cv-language-selector" style="display: flex; gap: 0.75rem; margin-top: 1rem; justify-content: center; flex-wrap: wrap;">
-      <button id="btn-cv-id" type="button" onclick="switchCVLanguage('id')" style="padding: 0.6rem 1.2rem; font-size: 0.875rem; border-radius: 8px; border: none; cursor: pointer; transition: all 0.2s ease;">
-        CV Indonesia
-      </button>
-      <button id="btn-cv-en" type="button" onclick="switchCVLanguage('en')" style="padding: 0.6rem 1.2rem; font-size: 0.875rem; border-radius: 8px; border: none; cursor: pointer; transition: all 0.2s ease;">
-        CV Inggris (English)
-      </button>
-    </div>
-
-    <!-- Area Tampilan File PDF (iFrame Viewer) -->
-    <div class="canvas-guard" id="cv-canvas-guard" style="position: relative; margin-top: 1rem; height: 68vh; border-radius: 8px; overflow: hidden; background: #ffffff;">
-      <iframe id="cv-iframe" src="eng-cv-adis.pdf" style="width: 100%; height: 100%; border: none;"></iframe>
-    </div>
-
-    <!-- Catatan Proteksi & Keamanan -->
-    <p class="security-note" style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.7; text-align: center; color: #cbd5e1;">
-      🔒 Mode Lihat-Saja. Gunakan tombol di atas untuk berpindah antara CV Bahasa Indonesia dan Inggris.
-    </p>
-  </div>
-</dialog>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://www.linkedin.com/in/adiestinuriaa" target="_blank" rel="noopener noreferrer">
+              <span>Profil LinkedIn</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            
+            <button class="button button-secondary" type="button" onclick="openCVPreview('id')">
+              <span data-i18n="viewCv">Curriculum Vitae</span>
+              <span aria-hidden="true">👁</span>
+            </button>
+          </div>
 
           <div class="hero-meta">
             <span><small data-i18n="basedIn">BERBASIS DI</small><strong>Indonesia</strong></span>
@@ -141,17 +106,11 @@
             <span><small data-i18n="focus">FOKUS</small><strong>Data · Planning · Digital</strong></span>
           </div>
         </div>
+
         <div class="hero-visual reveal">
           <div class="portrait-frame">
             <div class="portrait">
-              <img
-                class="portrait-image"
-                src="pp-adis.png"
-                alt="Foto profil Adiesti Nuri Amanda"
-                width="600"
-                height="600"
-                fetchpriority="high"
-              />
+              <img class="portrait-image" src="pp-adis.png" alt="Foto profil Adiesti Nuri Amanda" width="600" height="600" fetchpriority="high" />
             </div>
           </div>
           <div class="floating-card"><span class="floating-icon">✳</span><span><strong>Data-minded</strong><small data-i18n="peopleFocused">&amp; people-focused</small></span></div>
@@ -160,32 +119,34 @@
         <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span><span data-i18n="scroll">GULIR UNTUK MENJELAJAH</span></a>
       </section>
 
-     <section class="section alternate" id="about">
-  <div class="container about-grid">
-    <div class="section-heading reveal">
-      <p class="eyebrow">01 / <span data-i18n="aboutEyebrow">TENTANG SAYA</span></p>
-      <h2 data-i18n="aboutTitle">Perspektif analitis.<br /><span class="accent">Dampak nyata.</span></h2>
-    </div>
-    <div class="about-content reveal">
-      <p class="about-lead" data-i18n="aboutLead">Saya Adiesti Nuri Amanda, lulusan Ekonomi Pembangunan Universitas Trunodjoyo Madura.</p>
-      <p data-i18n="aboutBody">Saya memadukan analisis data, perencanaan regional, administrasi, dan komunikasi digital untuk mendukung keputusan yang berdampak.</p>
-      <div class="facts">
-        <div><strong>3.31<span>/4.00</span></strong><small data-i18n="gpa">IPK Ekonomi Pembangunan</small></div>
-        <div><strong>100<span>%</span></strong><small data-i18n="sipdAccuracy">Presisi rekonsiliasi SIPD</small></div>
-        <div><strong>2<span>+</span></strong><small data-i18n="focusAreas">Bidang kontribusi</small></div>
-      </div>
-      <a class="text-link" href="#contact"><span data-i18n="letsTalk">Mari berbincang</span> ↗</a>
+      <!-- SECTION ABOUT -->
+      <section class="section alternate" id="about">
+        <div class="container about-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">01 / <span data-i18n="aboutEyebrow">TENTANG SAYA</span></p>
+            <h2 data-i18n="aboutTitle">Perspektif analitis.<br /><span class="accent">Dampak nyata.</span></h2>
+          </div>
+          <div class="about-content reveal">
+            <p class="about-lead" data-i18n="aboutLead">Saya Adiesti Nuri Amanda, lulusan Ekonomi Pembangunan Universitas Trunodjoyo Madura.</p>
+            <p data-i18n="aboutBody">Saya memadukan analisis data, perencanaan regional, administrasi, dan komunikasi digital untuk mendukung keputusan yang berdampak.</p>
+            <div class="facts">
+              <div><strong>3.31<span>/4.00</span></strong><small data-i18n="gpa">IPK Ekonomi Pembangunan</small></div>
+              <div><strong>100<span>%</span></strong><small data-i18n="sipdAccuracy">Presisi rekonsiliasi SIPD</small></div>
+              <div><strong>2<span>+</span></strong><small data-i18n="focusAreas">Bidang kontribusi</small></div>
+            </div>
+            <a class="text-link" href="#contact"><span data-i18n="letsTalk">Mari berbincang</span> ↗</a>
 
-      <!-- TOMBOL INTERAKTIF TOOLS & SKILL -->
-<div class="about-actions" style="display: flex; gap: 0.75rem; margin-top: 1.25rem; flex-wrap: wrap;">
-  <button class="button button-secondary" type="button" onclick="document.getElementById('tools-modal').showModal()">
-    <span>🛠️ Tools</span>
-  </button>
-  <button class="button button-secondary" type="button" onclick="document.getElementById('skills-modal').showModal()">
-    <span>💡 Skill</span>
-  </button>
-</div>
-</section>
+            <div class="about-actions" style="display: flex; gap: 0.75rem; margin-top: 1.25rem; flex-wrap: wrap;">
+              <button class="button button-secondary" type="button" onclick="document.getElementById('tools-modal').showModal()">
+                <span>🛠️ Tools</span>
+              </button>
+              <button class="button button-secondary" type="button" onclick="document.getElementById('skills-modal').showModal()">
+                <span>💡 Skill</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- SECTION PENDIDIKAN & PRESTASI -->
       <section class="section container" id="education">
@@ -197,14 +158,13 @@
           <p class="section-intro" data-i18n="educationIntro">Fondasi akademik dan prestasi yang membentuk rasa ingin tahu serta komitmen saya.</p>
         </div>
 
-        <!-- SUB-BAGIAN 1: PENDIDIKAN PERGURUAN TINGGI (UNIVERSITAS) -->
+        <!-- PERGURUAN TINGGI -->
         <div class="education-group reveal" style="margin-bottom: 2.5rem;">
           <div class="category-heading" style="display: flex; align-items: center; margin-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">
             <h3 style="font-size: 1.1rem; color: #fbbf24; margin: 0;">🎓 Pendidikan Perguruan Tinggi (Universitas)</h3>
           </div>
           
           <div class="education-grid">
-            <!-- KARTU S1 -->
             <article class="education-card reveal">
               <span class="timeline-dot"></span>
               <p class="card-kicker">2022 — 2026</p>
@@ -220,7 +180,6 @@
               </div>
             </article>
 
-            <!-- KARTU BEASISWA -->
             <article class="education-card award-card reveal">
               <span class="timeline-dot"></span>
               <p class="card-kicker" data-i18n="scholarship">BEASISWA · 2025/2026</p>
@@ -229,7 +188,6 @@
               <span class="award-mark">✳</span>
             </article>
 
-            <!-- KARTU PRESTASI -->
             <article class="education-card award-card reveal">
               <span class="timeline-dot"></span>
               <p class="card-kicker" data-i18n="achievement">PRESTASI · 2024</p>
@@ -240,14 +198,13 @@
           </div>
         </div>
 
-        <!-- SUB-BAGIAN 2: SEKOLAH MENENGAH ATAS (SMA) -->
+        <!-- SMA -->
         <div class="education-group reveal">
           <div class="category-heading" style="display: flex; align-items: center; margin-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">
             <h3 style="font-size: 1.1rem; color: #fbbf24; margin: 0;">🏫 Sekolah Menengah Atas (SMA)</h3>
           </div>
           
           <div class="education-grid">
-            <!-- KARTU SMA -->
             <article class="education-card reveal">
               <span class="timeline-dot"></span>
               <p class="card-kicker">2019 — 2022</p>
@@ -265,7 +222,7 @@
         </div>
       </section>
 
-      <!-- SECTION PENGALAMAN PROFESIONAL (TERPERBAIKI) -->
+      <!-- SECTION PENGALAMAN PROFESIONAL -->
       <section class="section alternate" id="work-exp">
         <div class="container">
           <div class="section-topline reveal">
@@ -277,538 +234,486 @@
           </div>
 
           <div class="experience-grid">
-            <!-- KARTU 01: BAPPEDA MOJOKERTO -->
-<article class="experience-card reveal">
-  <div class="experience-head">
-    <span class="experience-icon">01</span>
-    <span class="card-kicker" data-i18n="internship">MAGANG · PERENCANAAN DAERAH</span>
-  </div>
-  <h3 data-i18n="bappedaRole">Staf Administrasi &amp; Perencanaan</h3>
-  <p class="experience-org">BAPPEDA Kabupaten Mojokerto</p>
-  <p class="muted" data-i18n="bappedaDesc">Audit KAK/RSK tahun anggaran 2025–2026, dukungan Musrenbang RPJMD dan Forum Perangkat Daerah, serta rekonsiliasi data SIPD dengan presisi 100%.</p>
-  <div class="tag-list">
-    <span>KAK / RSK</span>
-    <span>SIPD</span>
-    <span>Musrenbang</span>
-  </div>
-  <div class="document-actions">
-    <button class="document-button" type="button" onclick="openDocModal('Dokumentasi BAPPEDA Mojokerto', 'intern-bappeda-2.png', 'intern-bappeda-1.png')">
-      📷 <span data-i18n="viewDocumentation">Dokumentasi</span>
-    </button>
-    <button class="document-button" type="button" onclick="openCertModalSingle('Sertifikat Magang BAPPEDA Mojokerto', 'intern-bappeda-sertifikat.pdf')">
-      📜 <span data-i18n="viewCertificate">Sertifikat</span>
-    </button>
-  </div>
-</article>
+            <article class="experience-card reveal">
+              <div class="experience-head">
+                <span class="experience-icon">01</span>
+                <span class="card-kicker" data-i18n="internship">MAGANG · PERENCANAAN DAERAH</span>
+              </div>
+              <h3 data-i18n="bappedaRole">Staf Administrasi &amp; Perencanaan</h3>
+              <p class="experience-org">BAPPEDA Kabupaten Mojokerto</p>
+              <p class="muted" data-i18n="bappedaDesc">Audit KAK/RSK tahun anggaran 2025–2026, dukungan Musrenbang RPJMD dan Forum Perangkat Daerah, serta rekonsiliasi data SIPD dengan presisi 100%.</p>
+              <div class="tag-list">
+                <span>KAK / RSK</span>
+                <span>SIPD</span>
+                <span>Musrenbang</span>
+              </div>
+              <div class="document-actions">
+                <button class="document-button" type="button" onclick="openDocModal('Dokumentasi BAPPEDA Mojokerto', 'intern-bappeda-2.png', 'intern-bappeda-1.png')">
+                  📷 <span data-i18n="viewDocumentation">Dokumentasi</span>
+                </button>
+                <button class="document-button" type="button" onclick="openCertModalSingle('Sertifikat Magang BAPPEDA Mojokerto', 'intern-bappeda-sertifikat.pdf')">
+                  📜 <span data-i18n="viewCertificate">Sertifikat</span>
+                </button>
+              </div>
+            </article>
 
-<!-- KARTU 02: ASISTEN LAB -->
-<article class="experience-card reveal">
-  <div class="experience-head">
-    <span class="experience-icon">02</span>
-    <span class="card-kicker" data-i18n="teachingAssistant">ASISTENSI AKADEMIK</span>
-  </div>
-  <h3 data-i18n="assistantRole">Asisten Lab. Praktikum</h3>
-  <p class="experience-org">Mata Kuliah Manajemen Keuangan Daerah Universitas Trunodjoyo Madura</p>
-  <p class="muted" data-i18n="assistantDesc">Mendampingi praktikum, membantu mahasiswa memahami materi, dan mendukung kelancaran kegiatan akademik Keuangan Regional.</p>
-  <div class="tag-list">
-    <span data-i18n="regionalFinance">Keuangan Regional</span>
-    <span data-i18n="teaching">Pengajaran</span>
-  </div>
-  <div class="document-actions">
-    <button class="document-button" type="button" onclick="openDocModal('Dokumentasi Asisten Lab', 'lab-asisten-1.png', 'lab-asisten-2.png')">
-      📷 <span data-i18n="viewDocumentation">Dokumentasi</span>
-    </button>
-    <button class="document-button" type="button" onclick="openCertModalSingle('Sertifikat Asisten Lab Keuangan Regional', 'aslab-sertifikat.pdf')">
-      📜 <span data-i18n="viewCertificate">Sertifikat</span>
-    </button>
-  </div>
-</article>
+            <article class="experience-card reveal">
+              <div class="experience-head">
+                <span class="experience-icon">02</span>
+                <span class="card-kicker" data-i18n="teachingAssistant">ASISTENSI AKADEMIK</span>
+              </div>
+              <h3 data-i18n="assistantRole">Asisten Lab. Praktikum</h3>
+              <p class="experience-org">Mata Kuliah Manajemen Keuangan Daerah Universitas Trunodjoyo Madura</p>
+              <p class="muted" data-i18n="assistantDesc">Mendampingi praktikum, membantu mahasiswa memahami materi, dan mendukung kelancaran kegiatan akademik Keuangan Regional.</p>
+              <div class="tag-list">
+                <span data-i18n="regionalFinance">Keuangan Regional</span>
+                <span data-i18n="teaching">Pengajaran</span>
+              </div>
+              <div class="document-actions">
+                <button class="document-button" type="button" onclick="openDocModal('Dokumentasi Asisten Lab', 'lab-asisten-1.png', 'lab-asisten-2.png')">
+                  📷 <span data-i18n="viewDocumentation">Dokumentasi</span>
+                </button>
+                <button class="document-button" type="button" onclick="openCertModalSingle('Sertifikat Asisten Lab Keuangan Regional', 'aslab-sertifikat.pdf')">
+                  📜 <span data-i18n="viewCertificate">Sertifikat</span>
+                </button>
+              </div>
+            </article>
 
-<!-- KARTU 03: BEP JOURNAL -->
-<article class="experience-card reveal">
-  <div class="experience-head">
-    <span class="experience-icon">03</span>
-    <span class="card-kicker" data-i18n="editorialExperience">EDITORIAL · JURNAL</span>
-  </div>
-  <h3 data-i18n="editorialRole">Sekretaris Editorial BEP Journal</h3>
-  <p class="experience-org">Buletin Ekonomika Pembangunan Jurnal · Universitas Trunodjoyo Madura</p>
-  <p class="muted" data-i18n="editorialDesc">Mendukung administrasi editorial, menyiapkan notulensi rapat redaksi, dan membantu koordinasi kegiatan jurnal.</p>
-  <div class="tag-list">
-    <span>Editorial</span>
-    <span>Administrasi</span>
-    <span>Sinta 5</span>
-  </div>
-  <div class="document-actions">
-    <button class="document-button" type="button" onclick="openDocModal('Dokumentasi BEP Journal', 'bep-1.jpg', 'kolaborasi-rapat-bep.jpg')">
-      📷 <span data-i18n="viewDocumentation">Dokumentasi</span>
-    </button>
-    <button class="document-button" type="button" onclick="openCertModalSingle('Sertifikat Editorial BEP Journal', 'assets/bep_cert.jpg')">
-      📜 <span data-i18n="viewCertificate">Sertifikat</span>
-    </button>
-  </div>
-</article>
-          </div> <!-- Penutup experience-grid -->
-        </div> <!-- Penutup container -->
+            <article class="experience-card reveal">
+              <div class="experience-head">
+                <span class="experience-icon">03</span>
+                <span class="card-kicker" data-i18n="editorialExperience">EDITORIAL · JURNAL</span>
+              </div>
+              <h3 data-i18n="editorialRole">Sekretaris Editorial BEP Journal</h3>
+              <p class="experience-org">Buletin Ekonomika Pembangunan Jurnal · Universitas Trunodjoyo Madura</p>
+              <p class="muted" data-i18n="editorialDesc">Mendukung administrasi editorial, menyiapkan notulensi rapat redaksi, dan membantu koordinasi kegiatan jurnal.</p>
+              <div class="tag-list">
+                <span>Editorial</span>
+                <span>Administrasi</span>
+                <span>Sinta 5</span>
+              </div>
+              <div class="document-actions">
+                <button class="document-button" type="button" onclick="openDocModal('Dokumentasi BEP Journal', 'bep-1.jpg', 'kolaborasi-rapat-bep.jpg')">
+                  📷 <span data-i18n="viewDocumentation">Dokumentasi</span>
+                </button>
+                <button class="document-button" type="button" onclick="openCertModalSingle('Sertifikat Editorial BEP Journal', 'assets/bep_cert.jpg')">
+                  📜 <span data-i18n="viewCertificate">Sertifikat</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
 
       <!-- SECTION PENGALAMAN ORGANISASI -->
-<section class="section container" id="org-exp">
-  <div class="section-topline reveal">
-    <div class="section-heading">
-      <p class="eyebrow">04 / <span data-i18n="orgEyebrow">PENGALAMAN ORGANISASI</span></p>
-      <h2 data-i18n="orgTitle">Bekerja bersama,<br /><span class="accent">bertumbuh bersama.</span></h2>
-    </div>
-    <p class="section-intro" data-i18n="orgIntro">Kontribusi di organisasi mahasiswa melalui pengelolaan keuangan, teknologi informasi, dan komunikasi.</p>
-  </div>
+      <section class="section container" id="org-exp">
+        <div class="section-topline reveal">
+          <div class="section-heading">
+            <p class="eyebrow">04 / <span data-i18n="orgEyebrow">PENGALAMAN ORGANISASI</span></p>
+            <h2 data-i18n="orgTitle">Bekerja bersama,<br /><span class="accent">bertumbuh bersama.</span></h2>
+          </div>
+          <p class="section-intro" data-i18n="orgIntro">Kontribusi di organisasi mahasiswa melalui pengelolaan keuangan, teknologi informasi, dan komunikasi.</p>
+        </div>
 
-  <div class="experience-grid">
-    <!-- KARTU 01: BENDAHARA UMUM 1 -->
-    <article class="experience-card reveal">
-      <div class="experience-head">
-        <span class="experience-icon">01</span>
-        <span class="card-kicker" data-i18n="organization">ORGANISASI · UKM FEB RATI</span>
-      </div>
-      <h3 data-i18n="treasurerRole">Bendahara Umum 1</h3>
-      <p class="experience-org">UKM FEB RATI</p>
-      <p class="muted" data-i18n="treasurerDesc">Mendukung pencatatan dan pengelolaan keuangan organisasi serta koordinasi kebutuhan anggaran kegiatan.</p>
-      <div class="tag-list">
-        <span data-i18n="finance">Keuangan</span>
-        <span data-i18n="teamwork">Kolaborasi</span>
-      </div>
-      <div class="document-actions">
-        <button class="document-button" type="button" onclick="openDocModal('Dokumentasi Bendahara Umum UKM FEB RATI', 'bendahara-umum-1-1.png', 'bendahara-umum-1-2.png')">
-          📷 <span data-i18n="viewDocumentation">Dokumentasi</span>
-        </button>
-        <!-- Mengarahkan ke berkas PDF Sertifikat Bendahara -->
-        <button class="document-button" type="button" onclick="openCertModal('Sertifikat Bendahara Umum UKM FEB RATI', 'bendahara-umum-1-sertifikat.pdf')">
-          📜 <span data-i18n="viewCertificate">Sertifikat</span>
-        </button>
-      </div>
-    </article>
+        <div class="experience-grid">
+          <article class="experience-card reveal">
+            <div class="experience-head">
+              <span class="experience-icon">01</span>
+              <span class="card-kicker" data-i18n="organization">ORGANISASI · UKM FEB RATI</span>
+            </div>
+            <h3 data-i18n="treasurerRole">Bendahara Umum 1</h3>
+            <p class="experience-org">UKM FEB RATI</p>
+            <p class="muted" data-i18n="treasurerDesc">Mendukung pencatatan dan pengelolaan keuangan organisasi serta koordinasi kebutuhan anggaran kegiatan.</p>
+            <div class="tag-list">
+              <span data-i18n="finance">Keuangan</span>
+              <span data-i18n="teamwork">Kolaborasi</span>
+            </div>
+            <div class="document-actions">
+              <button class="document-button" type="button" onclick="openDocModal('Dokumentasi Bendahara Umum UKM FEB RATI', 'bendahara-umum-1-1.png', 'bendahara-umum-1-2.png')">
+                📷 <span data-i18n="viewDocumentation">Dokumentasi</span>
+              </button>
+              <button class="document-button" type="button" onclick="openCertModal('Sertifikat Bendahara Umum UKM FEB RATI', 'bendahara-umum-1-sertifikat.pdf')">
+                📜 <span data-i18n="viewCertificate">Sertifikat</span>
+              </button>
+            </div>
+          </article>
 
-    <!-- KARTU 02: SEKRETARIS BIDANG IT -->
-    <article class="experience-card reveal">
-      <div class="experience-head">
-        <span class="experience-icon">02</span>
-        <span class="card-kicker" data-i18n="organization">ORGANISASI · UKM FEB RATI</span>
-      </div>
-      <h3 data-i18n="itSecretaryRole">Sekretaris Bidang IT</h3>
-      <p class="experience-org">UKM FEB RATI</p>
-      <p class="muted" data-i18n="itSecretaryDesc">Mendukung kebutuhan digital dan dokumentasi organisasi serta berkontribusi sebagai MC pada Dies Natalis.</p>
-      <div class="tag-list">
-        <span>Digital</span>
-        <span data-i18n="documentation">Dokumentasi</span>
-        <span>MC</span>
-      </div>
-      <div class="document-actions">
-        <button class="document-button" type="button" onclick="openDocModal('Dokumentasi Sekretaris IT UKM FEB RATI', 'dokumentasi-it-2.png', 'dokumentasi-it-1.png')">
-          📷 <span data-i18n="viewDocumentation">Dokumentasi</span>
-        </button>
-        <!-- Mengarahkan ke berkas PDF Sertifikat IT -->
-        <button class="document-button" type="button" onclick="openCertModal('Sertifikat Sekretaris IT UKM FEB RATI', 'sekretaris-divisi-it.pdf')">
-          📜 <span data-i18n="viewCertificate">Sertifikat</span>
-        </button>
-      </div>
-    </article>
-  </div>
-</section>
+          <article class="experience-card reveal">
+            <div class="experience-head">
+              <span class="experience-icon">02</span>
+              <span class="card-kicker" data-i18n="organization">ORGANISASI · UKM FEB RATI</span>
+            </div>
+            <h3 data-i18n="itSecretaryRole">Sekretaris Bidang IT</h3>
+            <p class="experience-org">UKM FEB RATI</p>
+            <p class="muted" data-i18n="itSecretaryDesc">Mendukung kebutuhan digital dan dokumentasi organisasi serta berkontribusi sebagai MC pada Dies Natalis.</p>
+            <div class="tag-list">
+              <span>Digital</span>
+              <span data-i18n="documentation">Dokumentasi</span>
+              <span>MC</span>
+            </div>
+            <div class="document-actions">
+              <button class="document-button" type="button" onclick="openDocModal('Dokumentasi Sekretaris IT UKM FEB RATI', 'dokumentasi-it-2.png', 'dokumentasi-it-1.png')">
+                📷 <span data-i18n="viewDocumentation">Dokumentasi</span>
+              </button>
+              <button class="document-button" type="button" onclick="openCertModal('Sertifikat Sekretaris IT UKM FEB RATI', 'sekretaris-divisi-it.pdf')">
+                📜 <span data-i18n="viewCertificate">Sertifikat</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
 
+      <!-- SECTION STUDIO KARYA -->
       <section class="section alternate studio-section">
         <div class="container">
           <div class="section-topline reveal">
-            <div class="section-heading"><p class="eyebrow">05 / <span data-i18n="studioEyebrow">STUDIO KARYA</span></p><h2 data-i18n="studioTitle">Ide menjadi<br /><span class="accent">sesuatu yang nyata.</span></h2></div>
+            <div class="section-heading">
+              <p class="eyebrow">05 / <span data-i18n="studioEyebrow">STUDIO KARYA</span></p>
+              <h2 data-i18n="studioTitle">Ide menjadi<br /><span class="accent">sesuatu yang nyata.</span></h2>
+            </div>
             <p class="section-intro" data-i18n="studioIntro">Eksplorasi proyek data-teknikal dan karya desain komunikasi visual.</p>
           </div>
+
+          <!-- PROYEK TECHNICAL -->
           <div id="studio-proyek" class="studio-category">
-            <!-- SECTION 05: STUDIO KARYA (PROYEK TECHNICAL - 3 KARTU LENGKAP) -->
-<div id="studio-proyek" class="studio-category">
-  <div class="category-heading">
-    <h3 data-i18n="technicalProjects">Proyek Technical</h3>
-    <span>01 — 03</span>
-  </div>
+            <div class="category-heading">
+              <h3 data-i18n="technicalProjects">Proyek Technical</h3>
+              <span>01 — 03</span>
+            </div>
 
-  <div class="project-grid">
+            <div class="project-grid">
+              <article class="project-card reveal">
+                <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
+                  <img src="laptop.png" alt="Preview AI Customer Sentiment Analyzer" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <p class="card-kicker">AI · DATA ANALYSIS</p>
+                <h3>AI Customer Sentiment Analyzer</h3>
+                <p class="muted" data-i18n="sentimentDesc">Konsep dashboard web interaktif yang memadukan alur AI dan analisis sentimen pelanggan.</p>
+                <div class="tag-list">
+                  <span>Langflow</span>
+                  <span>IBM Bob</span>
+                  <span>HTML / JS</span>
+                  <span>Chart.js</span>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                  <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('AI Customer Sentiment Analyzer', 'laptop.png')">
+                    📜 <span>Lihat Pratinjau</span>
+                  </button>
+                </div>
+              </article>
 
-    <!-- KARTU PROYEK 01: AI CUSTOMER SENTIMENT ANALYZER -->
-    <article class="project-card reveal">
-      <!-- 1. Preview Gambar Proyek -->
-      <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
-        <img src="laptop.png" alt="Preview AI Customer Sentiment Analyzer" style="width: 100%; height: 100%; object-fit: cover;" />
-      </div>
+              <article class="project-card reveal">
+                <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
+                  <img src="import-supply-chain.png" alt="Preview Interactive Import Supply Chain Analytics" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <p class="card-kicker">DATA ANALYTICS · IBLU</p>
+                <h3 data-i18n="ChainTitle">Interactive Import Supply Chain Analytics</h3>
+                <p class="muted" data-i18n="ChainDesc">Eksplorasi performa penjualan melalui dashboard dan visualisasi data interaktif.</p>
+                <div class="tag-list">
+                  <span>Excel</span>
+                  <span>Power Query</span>
+                  <span>Pivot Table</span>
+                  <span>Power BI</span>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                  <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('Interactive Import Supply Chain Analytics', 'import-supply-chain.png')">
+                    📜 <span>Lihat Pratinjau</span>
+                  </button>
+                </div>
+              </article>
 
-      <p class="card-kicker">AI · DATA ANALYSIS</p>
-      <h3>AI Customer Sentiment Analyzer</h3>
-      <p class="muted" data-i18n="sentimentDesc">Konsep dashboard web interaktif yang memadukan alur AI dan analisis sentimen pelanggan.</p>
-
-      <div class="tag-list">
-        <span>Langflow</span>
-        <span>IBM Bob</span>
-        <span>HTML / JS</span>
-        <span>Chart.js</span>
-      </div>
-
-      <!-- 2. Tombol Membuka Dokumen / Laporan -->
-      <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('AI Customer Sentiment Analyzer', 'laptop.png')">
-          📜 <span>Lihat Pratinjau</span>
-        </button>
-        </a>
-      </div>
-    </article>
-
-    <!-- KARTU PROYEK 02: INTERACTIVE IMPORT SUPPLY CHAIN ANALYTICS -->
-    <article class="project-card reveal">
-      <!-- 1. Preview Gambar Proyek -->
-      <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
-        <img src="import-supply-chain.png" alt="Preview Interactive Import Supply Chain Analytics" style="width: 100%; height: 100%; object-fit: cover;" />
-      </div>
-
-      <p class="card-kicker">DATA ANALYTICS · IBLU</p>
-      <h3 data-i18n="ChainTitle">Interactive Import Supply Chain Analytics</h3>
-      <p class="muted" data-i18n="ChainDesc">Eksplorasi performa penjualan melalui dashboard dan visualisasi data interaktif.</p>
-
-      <div class="tag-list">
-        <span>Excel</span>
-        <span>Power Query</span>
-        <span>Pivot Table</span>
-        <span>Power BI</span>
-      </div>
-
-      <!-- 2. Tombol Membuka Dokumen / Laporan -->
-      <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('Interactive Pizza Sales Analytics', 'import-supply-chain.png')">
-          📜 <span>Lihat Pratinjau</span>
-        </button>
-        </a>
-      </div>
-    </article>
-
-    <!-- KARTU PROYEK 03: AUDIT DATA BAPPEDA MOJOKERTO -->
-    <article class="project-card reveal">
-      <!-- 1. Preview Gambar Proyek -->
-      <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
-        <img src="intern-bappeda-3.png" alt="Preview Audit Data BAPPEDA Mojokerto" style="width: 100%; height: 100%; object-fit: cover;" />
-      </div>
-
-      <p class="card-kicker" data-i18n="regionalAudit">PERENCANAAN REGIONAL</p>
-      <h3 data-i18n="auditTitle">Audit Data BAPPEDA Mojokerto</h3>
-      <p class="muted" data-i18n="auditDesc">Audit KAK/RSK 2025–2026 dan rekonsiliasi SIPD dengan presisi 100%.</p>
-
-      <div class="tag-list">
-        <span>KAK / RSK</span>
-        <span>SIPD</span>
-        <span>2025–2026</span>
-      </div>
-
-      <!-- 2. Tombol Membuka Dokumen / Laporan -->
-      <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('Audit Data BAPPEDA Mojokerto', 'intern-bappeda-3.png')">
-          📜 <span>Lihat Pratinjau</span>
-        </button>
-        </a>
-      </div>
-    </article>
-
-  </div> <!-- Penutup project-grid -->
-</div> <!-- Penutup studio-proyek -->
+              <article class="project-card reveal">
+                <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
+                  <img src="intern-bappeda-3.png" alt="Preview Audit Data BAPPEDA Mojokerto" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <p class="card-kicker" data-i18n="regionalAudit">PERENCANAAN REGIONAL</p>
+                <h3 data-i18n="auditTitle">Audit Data BAPPEDA Mojokerto</h3>
+                <p class="muted" data-i18n="auditDesc">Audit KAK/RSK 2025–2026 dan rekonsiliasi SIPD dengan presisi 100%.</p>
+                <div class="tag-list">
+                  <span>KAK / RSK</span>
+                  <span>SIPD</span>
+                  <span>2025–2026</span>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                  <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('Audit Data BAPPEDA Mojokerto', 'intern-bappeda-3.png')">
+                    📜 <span>Lihat Pratinjau</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
           
-          <!-- SECTION 05: STUDIO KARYA (DESAIN & CONTENT - 3 KARTU LENGKAP WITH PREVIEW FOTO) -->
-<div id="studio-desain" class="studio-category">
-  <div class="category-heading">
-    <h3 data-i18n="creativeContent">Desain &amp; Content</h3>
-    <span>04 — 06</span>
-  </div>
+          <!-- DESAIN & CONTENT -->
+          <div id="studio-desain" class="studio-category" style="margin-top: 3rem;">
+            <div class="category-heading">
+              <h3 data-i18n="creativeContent">Desain &amp; Content</h3>
+              <span>04 — 06</span>
+            </div>
 
-  <div class="project-grid">
+            <div class="project-grid">
+              <article class="project-card reveal">
+                <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
+                  <img src="bep-pamflet.png" alt="Preview Academic Publication Collateral" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <p class="card-kicker" data-i18n="academicDesign">DESAIN PUBLIKASI AKADEMIK</p>
+                <h3 data-i18n="publicationTitle">Academic Publication Collateral</h3>
+                <p class="muted" data-i18n="publicationDesc">Konsep pamflet dan banner Call for Paper BEP Journal Volume 6.</p>
+                <div class="tag-list">
+                  <span>Editorial Design</span>
+                  <span>Poster</span>
+                  <span>Sinta 5</span>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                  <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('Academic Publication Collateral', 'bep-pamflet.png')">
+                    🖼️ <span>Lihat Pratinjau</span>
+                  </button>
+                </div>
+              </article>
 
-    <!-- KARTU 01: ACADEMIC PUBLICATION COLLATERAL -->
-    <article class="project-card reveal">
-      <!-- 1. Preview Gambar Utama -->
-      <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
-        <img src="bep-pamflet.png" alt="Preview Academic Publication Collateral" style="width: 100%; height: 100%; object-fit: cover;" />
-      </div>
+              <article class="project-card reveal">
+                <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
+                  <img src="proyek-college-kartu-2.png" alt="Preview Social Media & Event Templates" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <p class="card-kicker" data-i18n="socialBranding">BRANDING MEDIA SOSIAL &amp; EVENT</p>
+                <h3 data-i18n="socialTitle">Social Media &amp; Event Templates</h3>
+                <p class="muted" data-i18n="socialDesc">Template IG Story live report MPAB dan layout ucapan ulang tahun pengurus.</p>
+                <div class="tag-list">
+                  <span>Instagram Story</span>
+                  <span>Event Design</span>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                  <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('Social Media & Event Templates', 'proyek-college-kartu-2.png')">
+                    🖼️ <span>Lihat Pratinjau</span>
+                  </button>
+                </div>
+              </article>
 
-      <p class="card-kicker" data-i18n="academicDesign">DESAIN PUBLIKASI AKADEMIK</p>
-      <h3 data-i18n="publicationTitle">Academic Publication Collateral</h3>
-      <p class="muted" data-i18n="publicationDesc">Konsep pamflet dan banner Call for Paper BEP Journal Volume 6.</p>
-
-      <div class="tag-list">
-        <span>Editorial Design</span>
-        <span>Poster</span>
-        <span>Sinta 5</span>
-      </div>
-
-      <!-- 2. Tombol Membuka Dokumen / Gambar Karya -->
-      <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('Academic Publication Collateral', 'bep-pamflet.png')">
-          🖼️ <span>Lihat Pratinjau</span>
-        </button>
-        </a>
-      </div>
-    </article>
-
-    <!-- KARTU 02: SOCIAL MEDIA & EVENT TEMPLATES -->
-    <article class="project-card reveal">
-      <!-- 1. Preview Gambar Utama -->
-      <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
-        <img src="proyek-college-kartu-2.png" alt="Preview Social Media & Event Templates" style="width: 100%; height: 100%; object-fit: cover;" />
-      </div>
-
-      <p class="card-kicker" data-i18n="socialBranding">BRANDING MEDIA SOSIAL &amp; EVENT</p>
-      <h3 data-i18n="socialTitle">Social Media &amp; Event Templates</h3>
-      <p class="muted" data-i18n="socialDesc">Template IG Story live report MPAB dan layout ucapan ulang tahun pengurus.</p>
-
-      <div class="tag-list">
-        <span>Instagram Story</span>
-        <span>Event Design</span>
-      </div>
-
-      <!-- 2. Tombol Membuka Dokumen / Gambar Karya -->
-      <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('Social Media & Event Templates', 'proyek-college-kartu-2.png')">
-          🖼️ <span>Lihat Pratinjau</span>
-        </button>
-        </a>
-      </div>
-    </article>
-
-    <!-- KARTU 03: DIGITAL IDENTITY & VIDEO EDITING -->
-    <article class="project-card reveal">
-      <!-- 1. Preview Gambar Utama -->
-      <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
-        <img src="proyek-college-kartu-3.png" alt="Preview Digital Identity & Video Editing" style="width: 100%; height: 100%; object-fit: cover;" />
-      </div>
-
-      <p class="card-kicker" data-i18n="digitalIdentity">IDENTITAS DIGITAL &amp; VIDEO</p>
-      <h3 data-i18n="identityTitle">Digital Identity &amp; Video Editing</h3>
-      <p class="muted" data-i18n="identityDesc">Eksplorasi header LinkedIn profesional, Linktree, dan editing video menggunakan CapCut.</p>
-
-      <div class="tag-list">
-        <span>LinkedIn</span>
-        <span>Linktree</span>
-        <span>CapCut</span>
-      </div>
-
-      <!-- 2. Tombol Membuka Dokumen / Gambar Karya -->
-      <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('Digital Identity & Video Editing', 'proyek-college-kartu-3.png')">
-          🖼️ <span>Lihat Pratinjau</span>
-        </button>
-        </a>
-      </div>
-    </article>
-
-  </div> <!-- Penutup project-grid -->
-</div> <!-- Penutup studio-desain -->
-
- <!-- SECTION 06: LISENSI & SERTIFIKASI (SLIDER & TOMBOL DOKUMEN) -->
-<section class="section container" id="certifications">
-  <div class="section-topline reveal" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
-    <div>
-      <div class="section-heading">
-        <p class="eyebrow">06 / <span data-i18n="certEyebrow">LISENSI &amp; SERTIFIKASI</span></p>
-        <h2 data-i18n="certTitle">Belajar tanpa<br /><span class="accent">berhenti.</span></h2>
-      </div>
-      <p class="section-intro" data-i18n="certIntro">Sertifikasi yang memperkuat kompetensi analitik, digital, dan perencanaan (Total 13 Sertifikat).</p>
-    </div>
-
-    <!-- Navigasi Slide Bar (Panah Kiri / Kanan) -->
-    <div class="cert-nav-controls" style="display: flex; align-items: center; gap: 0.75rem; background: rgba(255,255,255,0.05); padding: 0.5rem 0.85rem; border-radius: 30px; border: 1px solid rgba(255,255,255,0.15);">
-      <button type="button" class="cert-btn-nav" id="cert-prev-btn" onclick="moveCertSlide(-1)" aria-label="Slide Sebelumnya" disabled>←</button>
-      <span id="cert-slide-indicator" style="font-size: 0.9rem; color: #64ffda; font-weight: 700; min-width: 45px; text-align: center;">1 / 4</span>
-      <button type="button" class="cert-btn-nav" id="cert-next-btn" onclick="moveCertSlide(1)" aria-label="Slide Berikutnya">→</button>
-    </div>
-  </div>
-
-  <!-- Container Slider 4 Halaman -->
-  <div class="cert-slider-container" style="margin-top: 2rem;">
-    
-    <!-- HALAMAN 1 (Sertifikat 1 - 4) -->
-    <div class="cert-slide cert-slide-active" data-slide="0">
-      <div class="cert-grid-4">
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark ibm">IBM</span>
-            <div><p class="cert-issuer">IBM &amp; HACKTIV8</p><h3>AI Agent for Data Analysis</h3><p class="cert-score">95.30 / 100</p></div>
+              <article class="project-card reveal">
+                <div class="project-visual" style="padding: 0; overflow: hidden; height: 180px;">
+                  <img src="proyek-college-kartu-3.png" alt="Preview Digital Identity & Video Editing" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <p class="card-kicker" data-i18n="digitalIdentity">IDENTITAS DIGITAL &amp; VIDEO</p>
+                <h3 data-i18n="identityTitle">Digital Identity &amp; Video Editing</h3>
+                <p class="muted" data-i18n="identityDesc">Eksplorasi header LinkedIn profesional, Linktree, dan editing video menggunakan CapCut.</p>
+                <div class="tag-list">
+                  <span>LinkedIn</span>
+                  <span>Linktree</span>
+                  <span>CapCut</span>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                  <button class="document-button" type="button" onclick="event.stopPropagation(); openCertModal('Digital Identity & Video Editing', 'proyek-college-kartu-3.png')">
+                    🖼️ <span>Lihat Pratinjau</span>
+                  </button>
+                </div>
+              </article>
+            </div>
           </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('AI Agent for Data Analysis - IBM & Hacktiv8', 'data-analyst-ibm-sertifikat.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
+        </div>
+      </section>
 
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark">MS</span>
-            <div><p class="cert-issuer">MICROSOFT OFFICE</p><h3>Microsoft Office Certification</h3><p class="cert-score">95.55 / A</p></div>
+      <!-- SECTION LISENSI & SERTIFIKASI (SLIDER) -->
+      <section class="section container" id="certifications">
+        <div class="section-topline reveal" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">06 / <span data-i18n="certEyebrow">LISENSI &amp; SERTIFIKASI</span></p>
+              <h2 data-i18n="certTitle">Belajar tanpa<br /><span class="accent">berhenti.</span></h2>
+            </div>
+            <p class="section-intro" data-i18n="certIntro">Sertifikasi yang memperkuat kompetensi analitik, digital, dan perencanaan (Total 13 Sertifikat).</p>
           </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Microsoft Office Certification', 'sertifikat-ms-office-lkp.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
 
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark ibm">IBM</span>
-            <div><p class="cert-issuer">IBM SKILLSBUILD</p><h3>Getting Started with Data</h3><p class="cert-score">Data Literacy</p></div>
+          <div class="cert-nav-controls" style="display: flex; align-items: center; gap: 0.75rem; background: rgba(255,255,255,0.05); padding: 0.5rem 0.85rem; border-radius: 30px; border: 1px solid rgba(255,255,255,0.15);">
+            <button type="button" class="cert-btn-nav" id="cert-prev-btn" onclick="moveCertSlide(-1)" aria-label="Slide Sebelumnya" disabled>←</button>
+            <span id="cert-slide-indicator" style="font-size: 0.9rem; color: #64ffda; font-weight: 700; min-width: 45px; text-align: center;">1 / 4</span>
+            <button type="button" class="cert-btn-nav" id="cert-next-btn" onclick="moveCertSlide(1)" aria-label="Slide Berikutnya">→</button>
           </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Getting Started with Data - IBM', 'getting-starterd-with-data-sertifikat.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
+        </div>
 
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark iblu">IBLU</span>
-            <div><p class="cert-issuer">IBLU ACADEMY</p><h3>Certified Data Analyst</h3><p class="cert-score">760 / 700</p></div>
-          </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Certified Data Analyst - iBLU Academy', 'data-analyst-sertifikat-by-iblu-academy.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
-      </div>
-    </div>
+        <div class="cert-slider-container" style="margin-top: 2rem;">
+          <!-- HALAMAN 1 (Sertifikat 1 - 4) -->
+          <div class="cert-slide cert-slide-active" data-slide="0">
+            <div class="cert-grid-4">
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark ibm">IBM</span>
+                  <div><p class="cert-issuer">IBM &amp; HACKTIV8</p><h3>AI Agent for Data Analysis</h3><p class="cert-score">95.30 / 100</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('AI Agent for Data Analysis - IBM & Hacktiv8', 'data-analyst-ibm-sertifikat.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
 
-    <!-- HALAMAN 2 (Sertifikat 5 - 8) -->
-    <div class="cert-slide" data-slide="1">
-      <div class="cert-grid-4">
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark bnsp">B</span>
-            <div><p class="cert-issuer">BNSP</p><h3>Pemasaran Media Sosial</h3><p class="cert-score">BNSP Certified</p></div>
-          </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Pemasaran Media Sosial - BNSP', 'foto_sertifikat_bnsp_social.jpg')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark">MS</span>
+                  <div><p class="cert-issuer">MICROSOFT OFFICE</p><h3>Microsoft Office Certification</h3><p class="cert-score">95.55 / A</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Microsoft Office Certification', 'sertifikat-ms-office-lkp.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
 
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark bnsp">B</span>
-            <div><p class="cert-issuer">BNSP · LSP RENBANG</p><h3>Perencanaan Pembangunan Daerah</h3><p class="cert-score">BNSP Certified</p></div>
-          </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Perencanaan Pembangunan Daerah - BNSP', 'sertifikat-lsp-renbang.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark ibm">IBM</span>
+                  <div><p class="cert-issuer">IBM SKILLSBUILD</p><h3>Getting Started with Data</h3><p class="cert-score">Data Literacy</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Getting Started with Data - IBM', 'getting-starterd-with-data-sertifikat.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
 
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark" style="background:rgba(59,130,246,0.2); color:#60a5fa;">AF</span>
-            <div><p class="cert-issuer">ASEAN FOUNDATION &amp; LINKEDIN</p><h3>AI Career Readiness Training</h3><p class="cert-score">AI Literated</p></div>
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark iblu">IBLU</span>
+                  <div><p class="cert-issuer">IBLU ACADEMY</p><h3>Certified Data Analyst</h3><p class="cert-score">760 / 700</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Certified Data Analyst - iBLU Academy', 'data-analyst-sertifikat-by-iblu-academy.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
+            </div>
           </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('AI Career Readiness Training', 'ai-career-readiness-training.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
 
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark" style="background:rgba(16,185,129,0.2); color:#34d399;">CR</span>
-            <div><p class="cert-issuer">COURSERA</p><h3>Building a Business Presence With Facebook Marketing</h3><p class="cert-score">Project Course</p></div>
-          </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Building a Business Presence With Facebook Marketing - Coursera', 'building-a-business-presence-with-facebook-marketing-sertifikat.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
-      </div>
-    </div>
+          <!-- HALAMAN 2 (Sertifikat 5 - 8) -->
+          <div class="cert-slide" data-slide="1">
+            <div class="cert-grid-4">
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark bnsp">B</span>
+                  <div><p class="cert-issuer">BNSP</p><h3>Pemasaran Media Sosial</h3><p class="cert-score">BNSP Certified</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Pemasaran Media Sosial - BNSP', 'foto_sertifikat_bnsp_social.jpg')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
 
-    <!-- HALAMAN 3 (Sertifikat 9 - 12) -->
-    <div class="cert-slide" data-slide="2">
-      <div class="cert-grid-4">
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark ibm">IBM</span>
-            <div><p class="cert-issuer">IBM SKILLSBUILD</p><h3>Build an AI Agent</h3><p class="cert-score">AI &amp; Data</p></div>
-          </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Build an AI Agent - IBM', 'build-an-ai-agent-sertifikat.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark bnsp">B</span>
+                  <div><p class="cert-issuer">BNSP · LSP RENBANG</p><h3>Perencanaan Pembangunan Daerah</h3><p class="cert-score">BNSP Certified</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Perencanaan Pembangunan Daerah - BNSP', 'sertifikat-lsp-renbang.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
 
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark CR">CR</span>
-            <div><p class="cert-issuer">COURSERA</p><h3>Introduction to Project Management with ClickUp</h3><p class="cert-score">Project Course</p></div>
-          </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Introduction to Project Management with ClickUp - Coursera', 'Introduction-to-Project-Management-with-ClickUp.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark" style="background:rgba(59,130,246,0.2); color:#60a5fa;">AF</span>
+                  <div><p class="cert-issuer">ASEAN FOUNDATION &amp; LINKEDIN</p><h3>AI Career Readiness Training</h3><p class="cert-score">AI Literated</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('AI Career Readiness Training', 'ai-career-readiness-training.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
 
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark" style="background:rgba(239,68,68,0.2); color:#f87171;">DQ</span>
-            <div><p class="cert-issuer">DQLAB</p><h3>Data Science Fundamentals</h3><p class="cert-score">Practical Project</p></div>
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark" style="background:rgba(16,185,129,0.2); color:#34d399;">CR</span>
+                  <div><p class="cert-issuer">COURSERA</p><h3>Building a Business Presence With Facebook Marketing</h3><p class="cert-score">Project Course</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Building a Business Presence With Facebook Marketing - Coursera', 'building-a-business-presence-with-facebook-marketing-sertifikat.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
+            </div>
           </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Data Science Fundamentals - DQLab', 'dqlab-data-analyst-fundamental-sertifikat.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
 
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark" style="background:rgba(168,85,247,0.2); color:#c084fc;">CR</span>
-            <div><p class="cert-issuer">COURSERA</p><h3>Business Analysis & Process Management</h3><p class="cert-score">Project Course</p></div>
-          </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Business Analysis & Process Management & Tools - Coursera', 'business-analysis-dan-process-management-sertifikat.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
-      </div>
-    </div>
+          <!-- HALAMAN 3 (Sertifikat 9 - 12) -->
+          <div class="cert-slide" data-slide="2">
+            <div class="cert-grid-4">
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark ibm">IBM</span>
+                  <div><p class="cert-issuer">IBM SKILLSBUILD</p><h3>Build an AI Agent</h3><p class="cert-score">AI &amp; Data</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Build an AI Agent - IBM', 'build-an-ai-agent-sertifikat.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
 
-    <!-- HALAMAN 4 (Sertifikat 13) -->
-    <div class="cert-slide" data-slide="3">
-      <div class="cert-grid-4">
-        <article class="cert-card">
-          <div style="display: flex; align-items: center; gap: 0.85rem;">
-            <span class="cert-mark" style="background:rgba(245,158,11,0.2); color:#fbbf24;">CR</span>
-            <div><p class="cert-issuer">COURSERA</p><h3>Build a free website with WordPress</h3><p class="cert-score">Project Course</p></div>
-          </div>
-          <div class="document-actions" style="margin-top: 1rem;">
-            <button class="document-button" type="button" onclick="openCertModal('Build a free website with WordPress - Coursera', 'build-a-free-website-with-wordpress.pdf')">
-              📜 <span>Lihat Sertifikat</span>
-            </button>
-          </div>
-        </article>
-      </div>
-    </div>
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark CR">CR</span>
+                  <div><p class="cert-issuer">COURSERA</p><h3>Introduction to Project Management with ClickUp</h3><p class="cert-score">Project Course</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Introduction to Project Management with ClickUp - Coursera', 'Introduction-to-Project-Management-with-ClickUp.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
 
-  </div>
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark" style="background:rgba(239,68,68,0.2); color:#f87171;">DQ</span>
+                  <div><p class="cert-issuer">DQLAB</p><h3>Data Science Fundamentals</h3><p class="cert-score">Practical Project</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Data Science Fundamentals - DQLab', 'dqlab-data-analyst-fundamental-sertifikat.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
 
-  <!-- Indikator Dots Navigasi Bawah -->
-  <div class="cert-dots-wrapper" style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.5rem;">
-    <button type="button" class="cert-dot cert-dot-active" onclick="goToCertSlide(0)" aria-label="Ke Slide 1"></button>
-    <button type="button" class="cert-dot" onclick="goToCertSlide(1)" aria-label="Ke Slide 2"></button>
-    <button type="button" class="cert-dot" onclick="goToCertSlide(2)" aria-label="Ke Slide 3"></button>
-    <button type="button" class="cert-dot" onclick="goToCertSlide(3)" aria-label="Ke Slide 4"></button>
-  </div>
-</section>
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark" style="background:rgba(168,85,247,0.2); color:#c084fc;">CR</span>
+                  <div><p class="cert-issuer">COURSERA</p><h3>Business Analysis &amp; Process Management</h3><p class="cert-score">Project Course</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Business Analysis & Process Management & Tools - Coursera', 'business-analysis-dan-process-management-sertifikat.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- HALAMAN 4 (Sertifikat 13) -->
+          <div class="cert-slide" data-slide="3">
+            <div class="cert-grid-4">
+              <article class="cert-card">
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <span class="cert-mark" style="background:rgba(245,158,11,0.2); color:#fbbf24;">CR</span>
+                  <div><p class="cert-issuer">COURSERA</p><h3>Build a free website with WordPress</h3><p class="cert-score">Project Course</p></div>
+                </div>
+                <div class="document-actions" style="margin-top: 1rem;">
+                  <button class="document-button" type="button" onclick="openCertModal('Build a free website with WordPress - Coursera', 'build-a-free-website-with-wordpress.pdf')">
+                    📜 <span>Lihat Sertifikat</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-dots-wrapper" style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.5rem;">
+          <button type="button" class="cert-dot cert-dot-active" onclick="goToCertSlide(0)" aria-label="Ke Slide 1"></button>
+          <button type="button" class="cert-dot" onclick="goToCertSlide(1)" aria-label="Ke Slide 2"></button>
+          <button type="button" class="cert-dot" onclick="goToCertSlide(2)" aria-label="Ke Slide 3"></button>
+          <button type="button" class="cert-dot" onclick="goToCertSlide(3)" aria-label="Ke Slide 4"></button>
+        </div>
+      </section>
 
       <!-- SECTION KONTAK -->
       <section class="contact-section" id="contact">
@@ -817,7 +722,6 @@
           <h2 data-i18n="contactTitle">Mari Terhubung &amp;<br /><span class="accent">Berkolaborasi!</span></h2>
           <p class="contact-description" data-i18n="contactDesc">Punya proyek, peluang, atau ide yang ingin dibahas? Saya senang mendengar kabar dari Anda.</p>
 
-          <!-- 2 Tombol Pilihan Berwarna Biru (Email & Nomor Telepon/WA) -->
           <div class="contact-actions" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
             <a class="button button-primary contact-cta" href="mailto:adiestinuriaa@gmail.com">
               📧 adiestinuriaa@gmail.com <span aria-hidden="true">↗</span>
@@ -830,41 +734,67 @@
       </section>
     </main>
 
+    <!-- FOOTER HALAMAN -->
     <footer class="site-footer">
       <div class="container footer-inner">
-        <footer class="site-footer">
-  <div class="container footer-inner">
-    <!-- BRAND / LOGO -->
-    <a class="brand" href="#home">ADIESTI<span>.</span></a>
+        <a class="brand" href="#home">ADIESTI<span>.</span></a>
 
-    <!-- TAUTAN MEDIA SOSIAL (BARU) -->
-    <div class="footer-socials">
-      <a href="https://t.me/diessnaa" target="_blank" rel="noopener noreferrer" title="Telegram">
-        <span>📲 Telegram</span>
-      </a>
-      <a href="https://instagram.com/diessnaaww" target="_blank" rel="noopener noreferrer" title="Instagram">
-        <span>📸 Instagram</span>
-      </a>
-      <a href="https://tiktok.com/@diessnaaww" target="_blank" rel="noopener noreferrer" title="TikTok">
-        <span>🎵 TikTok</span>
-      </a>
-      <a href="https://lemon8-app.com/diessnaaww" target="_blank" rel="noopener noreferrer" title="Lemon8">
-        <span>🍋 Lemon8</span>
-      </a>
-      <a href="https://threads.net/@diessnaaww" target="_blank" rel="noopener noreferrer" title="Threads">
-        <span>🧵 Threads</span>
-      </a>
-      <a href="https://youtube.com/@adiestinuriamanda1276" target="_blank" rel="noopener noreferrer" title="YouTube">
-        <span>▶️ YouTube</span>
-      </a>
-    </div>
+        <div class="footer-socials">
+          <a href="https://t.me/diessnaa" target="_blank" rel="noopener noreferrer" title="Telegram">
+            <span>📲 Telegram</span>
+          </a>
+          <a href="https://instagram.com/diessnaaww" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <span>📸 Instagram</span>
+          </a>
+          <a href="https://tiktok.com/@diessnaaww" target="_blank" rel="noopener noreferrer" title="TikTok">
+            <span>🎵 TikTok</span>
+          </a>
+          <a href="https://lemon8-app.com/diessnaaww" target="_blank" rel="noopener noreferrer" title="Lemon8">
+            <span>🍋 Lemon8</span>
+          </a>
+          <a href="https://threads.net/@diessnaaww" target="_blank" rel="noopener noreferrer" title="Threads">
+            <span>🧵 Threads</span>
+          </a>
+          <a href="https://youtube.com/@adiestinuriamanda1276" target="_blank" rel="noopener noreferrer" title="YouTube">
+            <span>▶️ YouTube</span>
+          </a>
+        </div>
 
-    <!-- HAK CIPTA & NAVIGASI -->
-    <p>© <span id="current-year"></span> Adiesti Nuri Amanda.</p>
-    <a class="back-top" href="#home" data-i18n="backTop">Kembali ke atas ↑</a>
-    <button class="owner-trigger" type="button" aria-label="Buka dashboard pemilik" title="Akses pemilik">⌑</button>
-  </div>
-</footer>
+        <p>© <span id="current-year"></span> Adiesti Nuri Amanda.</p>
+        <a class="back-top" href="#home" data-i18n="backTop">Kembali ke atas ↑</a>
+        <button class="owner-trigger" type="button" aria-label="Buka dashboard pemilik" title="Akses pemilik">⌑</button>
+      </div>
+    </footer>
+
+    <!-- MODAL DIALOGS -->
+    <dialog id="cv-preview-dialog" class="document-dialog" aria-labelledby="cv-preview-title">
+      <div class="dialog-panel document-panel" style="max-width: 900px; background: #0a192f; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; padding: 1.5rem; color: #ffffff;">
+        <div class="preview-heading" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1); flex-wrap: wrap; gap: 0.5rem;">
+          <div>
+            <p class="eyebrow" style="color: #fbbf24; margin: 0; font-size: 0.75rem; font-weight: 600;">🔒 PROTECTED PREVIEW</p>
+            <h2 id="cv-preview-title" style="margin: 0; font-size: 1.2rem; color: #ffffff;">Curriculum Vitae — Adiesti Nuri Amanda</h2>
+          </div>
+          <button class="dialog-close icon-button" type="button" onclick="closeCVPreview()" aria-label="Tutup" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
+        </div>
+
+        <div class="cv-language-selector" style="display: flex; gap: 0.75rem; margin-top: 1rem; justify-content: center; flex-wrap: wrap;">
+          <button id="btn-cv-id" type="button" onclick="switchCVLanguage('id')" style="padding: 0.6rem 1.2rem; font-size: 0.875rem; border-radius: 8px; border: none; cursor: pointer; transition: all 0.2s ease;">
+            CV Indonesia
+          </button>
+          <button id="btn-cv-en" type="button" onclick="switchCVLanguage('en')" style="padding: 0.6rem 1.2rem; font-size: 0.875rem; border-radius: 8px; border: none; cursor: pointer; transition: all 0.2s ease;">
+            CV Inggris (English)
+          </button>
+        </div>
+
+        <div class="canvas-guard" id="cv-canvas-guard" style="position: relative; margin-top: 1rem; height: 68vh; border-radius: 8px; overflow: hidden; background: #ffffff;">
+          <iframe id="cv-iframe" src="eng-cv-adis.pdf" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+
+        <p class="security-note" style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.7; text-align: center; color: #cbd5e1;">
+          🔒 Mode Lihat-Saja. Gunakan tombol di atas untuk berpindah antara CV Bahasa Indonesia dan Inggris.
+        </p>
+      </div>
+    </dialog>
 
     <dialog class="owner-dialog" aria-labelledby="owner-title">
       <div class="dialog-panel">
@@ -872,267 +802,104 @@
         <div class="owner-pin-view">
           <p class="eyebrow">OWNER ACCESS / DEMO</p><h2 id="owner-title" data-i18n="ownerTitle">Dashboard Pemilik</h2>
           <p class="muted" data-i18n="ownerPrompt">Masukkan PIN untuk melanjutkan.</p>
-          <form class="owner-pin-form"><label for="owner-pin" data-i18n="pinLabel">PIN akses</label><input id="owner-pin" type="password" inputmode="numeric" autocomplete="current-password" required maxlength="12" /><p class="pin-error" aria-live="polite"></p><button class="button button-primary" type="submit" data-i18n="openDashboard">Buka dashboard</button></form>
+          <form class="owner-pin-form">
+            <label for="owner-pin" data-i18n="pinLabel">PIN akses</label>
+            <input id="owner-pin" type="password" inputmode="numeric" autocomplete="current-password" required maxlength="12" />
+            <p class="pin-error" aria-live="polite"></p>
+            <button class="button button-primary" type="submit" data-i18n="openDashboard">Buka dashboard</button>
+          </form>
           <p class="security-note" data-i18n="staticSecurity">PIN ini hanya demo sisi klien. Situs statis tidak dapat melindungi tautan atau dokumen privat dari inspeksi browser.</p>
         </div>
         <div class="owner-dashboard" hidden>
           <p class="eyebrow">OWNER DASHBOARD / DEMO</p><h2 tabindex="-1" data-i18n="dashboardTitle">Ruang Pemilik</h2>
           <p class="security-note" data-i18n="dashboardWarning">Jangan masukkan tautan KTP atau dokumen sensitif ke situs statis publik. Gunakan layanan dengan autentikasi server.</p>
-          <section class="dashboard-section"><h3 data-i18n="trackerTitle">Pelacak Lamaran</h3><div class="table-wrap"><table><thead><tr><th data-i18n="company">Perusahaan</th><th data-i18n="role">Posisi</th><th data-i18n="status">Status</th></tr></thead><tbody><tr><td data-i18n="sampleCompany">Contoh Perusahaan</td><td data-i18n="sampleRole">Analis Data</td><td><span class="status-pill" data-i18n="applied">Diajukan</span></td></tr></tbody></table></div></section>
-          <section class="dashboard-section"><h3 data-i18n="vaultTitle">Brankas Dokumen</h3><p class="dashboard-hint" data-i18n="vaultHint">Tautan kosong dan dinonaktifkan. Jangan simpan tautan privat di halaman publik.</p><div class="vault-list"><button type="button" class="vault-button" data-vault="cv" disabled><span>CV Master</span><span data-i18n="copyLink">Salin tautan</span></button><button type="button" class="vault-button" data-vault="certificates" disabled><span data-i18n="certificates">Sertifikat</span><span data-i18n="copyLink">Salin tautan</span></button></div><p class="copy-feedback" aria-live="polite"></p></section>
-          <section class="dashboard-section"><h3 data-i18n="starTitle">Catatan Wawancara · STAR</h3><ul class="star-list"><li><strong>S — Situation:</strong> <span data-i18n="starS">Jelaskan konteks dan tantangan.</span></li><li><strong>T — Task:</strong> <span data-i18n="starT">Sebutkan tanggung jawab Anda.</span></li><li><strong>A — Action:</strong> <span data-i18n="starA">Uraikan langkah spesifik yang Anda ambil.</span></li><li><strong>R — Result:</strong> <span data-i18n="starR">Tunjukkan hasil terukur yang dicapai.</span></li></ul></section>
+          <section class="dashboard-section">
+            <h3 data-i18n="trackerTitle">Pelacak Lamaran</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th data-i18n="company">Perusahaan</th><th data-i18n="role">Posisi</th><th data-i18n="status">Status</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td data-i18n="sampleCompany">Contoh Perusahaan</td><td data-i18n="sampleRole">Analis Data</td><td><span class="status-pill" data-i18n="applied">Diajukan</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="dashboard-section">
+            <h3 data-i18n="vaultTitle">Brankas Dokumen</h3>
+            <p class="dashboard-hint" data-i18n="vaultHint">Tautan kosong dan dinonaktifkan. Jangan simpan tautan privat di halaman publik.</p>
+            <div class="vault-list">
+              <button type="button" class="vault-button" data-vault="cv" disabled><span>CV Master</span><span data-i18n="copyLink">Salin tautan</span></button>
+              <button type="button" class="vault-button" data-vault="certificates" disabled><span data-i18n="certificates">Sertifikat</span><span data-i18n="copyLink">Salin tautan</span></button>
+            </div>
+            <p class="copy-feedback" aria-live="polite"></p>
+          </section>
+          <section class="dashboard-section">
+            <h3 data-i18n="starTitle">Catatan Wawancara · STAR</h3>
+            <ul class="star-list">
+              <li><strong>S — Situation:</strong> <span data-i18n="starS">Jelaskan konteks dan tantangan.</span></li>
+              <li><strong>T — Task:</strong> <span data-i18n="starT">Sebutkan tanggung jawab Anda.</span></li>
+              <li><strong>A — Action:</strong> <span data-i18n="starA">Uraikan langkah spesifik yang Anda ambil.</span></li>
+              <li><strong>R — Result:</strong> <span data-i18n="starR">Tunjukkan hasil terukur yang dicapai.</span></li>
+            </ul>
+          </section>
           <button class="button button-secondary dashboard-lock" type="button" data-i18n="lockDashboard">Kunci dashboard</button>
         </div>
       </div>
     </dialog>
 
-    <dialog class="document-dialog" aria-labelledby="document-title">
-      <div class="dialog-panel document-panel">
-        <button class="document-close icon-button" type="button" aria-label="Tutup">×</button>
-        <div class="document-pin-view">
-          <p class="eyebrow">PROTECTED PREVIEW / DEMO</p><h2 data-i18n="documentAccess">Akses Dokumen</h2>
-          <p class="muted document-description"></p>
-          <form class="document-pin-form"><label for="document-pin" data-i18n="pinLabel">PIN akses</label><input id="document-pin" type="password" inputmode="numeric" autocomplete="current-password" required maxlength="12" /><p class="document-pin-error" aria-live="polite"></p><button class="button button-primary" type="submit" data-i18n="verifyPin">Verifikasi PIN</button></form>
-          <p class="security-note" data-i18n="canvasWarning">Canvas dan PIN sisi klien bukan perlindungan dokumen. Pratinjau ini adalah mockup, bukan dokumen asli.</p>
+    <dialog id="tools-modal" class="document-dialog">
+      <div class="dialog-panel document-panel" style="max-width: 650px; padding: 1.75rem; background: #0a192f; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+          <div>
+            <p class="eyebrow" style="color: #fbbf24; margin: 0; font-size: 0.75rem;">SOFTWARE &amp; PLATFORM</p>
+            <h2 style="margin: 0; font-size: 1.3rem; color: #fff;">🛠️ Tools</h2>
+          </div>
+          <button class="dialog-close icon-button" type="button" onclick="document.getElementById('tools-modal').close()" aria-label="Tutup" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #ffffff; font-size: 1.25rem; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+            ✕
+          </button>
         </div>
-        <div class="document-preview" hidden>
-          <div class="preview-heading"><div><p class="eyebrow" data-i18n="watermarkedPreview">PRATINJAU BERMARKA</p><h2 id="document-title"></h2></div><span class="preview-badge" data-i18n="demoOnly">DEMO ONLY</span></div>
-          <div class="canvas-guard"><canvas id="document-canvas" width="1000" height="700" aria-label="Pratinjau mockup dokumen dengan watermark"></canvas><div class="canvas-blur-overlay" data-i18n="previewHidden">Pratinjau disensor saat halaman tidak aktif.</div></div>
-          <p class="security-note" data-i18n="previewDisclaimer">Ini hanya mockup Canvas. Perlindungan sebenarnya membutuhkan autentikasi dan penyajian dokumen dari server privat.</p>
-          <button class="button button-secondary preview-close" type="button" data-i18n="closePreview">Tutup pratinjau</button>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.75rem; margin-top: 1.25rem; max-height: 60vh; overflow-y: auto; padding-right: 0.25rem;">
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
+            <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📄</span>
+            <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Doc / Word</strong>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
+            <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📊</span>
+            <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Excel / Spreadsheet</strong>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
+            <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📜</span>
+            <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Excel Power Query</strong>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
+            <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📙</span>
+            <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Powerpoint / Slide</strong>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
+            <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📈</span>
+            <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Langflow</strong>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
+            <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">🕹</span>
+            <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">IBM Bob</strong>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
+            <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📉</span>
+            <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Power BI</strong>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
+            <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">🖇</span>
+            <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">VS Code</strong>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
+            <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">💾</span>
+            <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Git</strong>
+          </div>
         </div>
-      </div>
-    </dialog>
-
-    <!-- ========================================== -->
-<!-- MODAL POP-UP 1: TOOLS (PERANGKAT)        -->
-<!-- ========================================== -->
-<dialog id="tools-modal" class="document-dialog">
-  <div class="dialog-panel document-panel" style="max-width: 650px; padding: 1.75rem; background: #0a192f; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px;">
-    <!-- Header Pop-up dengan Tombol X yang Jelas -->
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
-      <div>
-        <p class="eyebrow" style="color: #fbbf24; margin: 0; font-size: 0.75rem;">SOFTWARE &amp; PLATFORM</p>
-        <h2 style="margin: 0; font-size: 1.3rem; color: #fff;">🛠️ Tools</h2>
-      </div>
-      <!-- TOMBOL SILANG (X) -->
-      <button class="dialog-close icon-button" type="button" onclick="document.getElementById('tools-modal').close()" aria-label="Tutup" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #ffffff; font-size: 1.25rem; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; line-height: 1;">
-        ✕
-      </button>
-    </div>
-
-    <!-- Grid Daftar Tools -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.75rem; margin-top: 1.25rem; max-height: 60vh; overflow-y: auto; padding-right: 0.25rem;">
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📄</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Doc / Word</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📊</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Excel / Spreadsheet</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📜</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Excel Power Query</strong>
-      </div>
-
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📙</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Powerpoint / Slide</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📈</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;"> Langflow</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">🕹</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">IBM Bob</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📉</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Power BI</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">🖇</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Visual Studio Code</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📈</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Google Trends</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">🖌️</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Canva</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">🧊</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">SketchUp (basic)</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">🎬</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">CapCut</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">🌐</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Google Workspace</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; border-radius: 10px; text-align: center;">
-        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">💎</span>
-        <strong style="font-size: 0.85rem; color: #e2e8f0; display: block;">Meta ADS</strong>
-      </div>
-    </div>
-
-    <div style="margin-top: 1.25rem; text-align: right;">
-      <button class="button button-secondary" type="button" onclick="document.getElementById('tools-modal').close()">Tutup</button>
-    </div>
-  </div>
-</dialog>
-
-<!-- ========================================== -->
-<!-- MODAL POP-UP: SKILL (STRUKTUR TERPERBAIKI) -->
-<!-- ========================================== -->
-<dialog id="skills-modal" style="border:none; background:transparent; padding:0; margin:auto; max-width:600px; width:92%; outline:none;">
-  <div style="background:#0a192f; border:1px solid rgba(255,255,255,0.2); border-radius:16px; padding:1.5rem; color:#ffffff; box-shadow:0 10px 30px rgba(0,0,0,0.5); display:flex; flex-direction:column; max-height:85vh;">
-    
-    <!-- Header Pop-up -->
-    <div style="display:flex; justify-content:space-between; align-items:center; padding-bottom:0.75rem; border-bottom:1px solid rgba(255,255,255,0.15); flex-shrink:0;">
-      <div>
-        <p style="color:#fbbf24; margin:0; font-size:0.75rem; font-weight:600;">COMPETENCIES &amp; SKILLS</p>
-        <h2 style="margin:0; font-size:1.25rem; color:#ffffff;">💡 Skill &amp; Keahlian</h2>
-      </div>
-      <button type="button" onclick="document.getElementById('skills-modal').close()" aria-label="Tutup" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); color:#ffffff; font-size:1.1rem; width:32px; height:32px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center;">✕</button>
-    </div>
-
-    <!-- Area Scroll Khusus (Hard & Personal Skill) -->
-    <div style="overflow-y:auto; max-height:55vh; margin-top:1rem; padding-right:0.5rem; display:flex; flex-direction:column; gap:1.25rem;">
-      
-      <!-- Hard Skill -->
-      <div>
-        <h3 style="font-size:0.95rem; color:#64ffda; margin:0 0 0.5rem 0; border-bottom:1px solid rgba(100,255,218,0.2); padding-bottom:0.25rem;">🛠️ Hard Skill</h3>
-        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Data Analytic</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Data Entry</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Data Visualization</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Pivot Table</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Editor Publishing</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Administration</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Microsoft Office</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Graphic Design</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Video Editing</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Multitasking</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Google Workspace Proficiency</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Social Media Marketing</span>
-        </div>
-      </div>
-
-      <!-- Personal Skill -->
-      <div>
-        <h3 style="font-size:0.95rem; color:#fbbf24; margin:0 0 0.5rem 0; border-bottom:1px solid rgba(251,191,36,0.2); padding-bottom:0.25rem;">🌟 Personal Skill</h3>
-        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Leadership</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Time Management</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Adaptability</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Teamwork</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Organization</span>
-          <span style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:0.35rem 0.65rem; border-radius:20px; font-size:0.8rem; color:#e2e8f0;">Problem Solving</span>
-        </div>
-      </div>
-
-    </div> <!-- Penutup elemen scroll -->
-
-    <div style="margin-top: 1.25rem; text-align: right;">
-      <button class="button button-secondary" type="button" onclick="document.getElementById('skills-modal').close()">Tutup</button>
-    </div>
-  </div>
-</dialog> <!-- TAG PENUTUP SKILLS MODAL (DIPERBAIKI) -->
-
-<!-- ========================================== -->
-<!-- MODAL DOKUMENTASI -->
-<!-- ========================================== -->
-<dialog id="modal-dokumentasi" class="protected-modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <div>
-        <p class="modal-subtitle">DOKUMENTASI KEGIATAN</p>
-        <h3 class="modal-title" id="dok-title">📷 Dokumentasi Pengalaman</h3>
-      </div>
-      <button type="button" class="btn-close" onclick="closeModal('modal-dokumentasi')">✕</button>
-    </div>
-    
-    <div class="modal-body">
-      <!-- Overlay Watermark Pengaman -->
-      <div class="watermark-overlay">CONFIDENTIAL • ADIESTI NURI AMANDA • DO NOT COPY</div>
-      
-      <!-- Container Galeri Foto -->
-      <div class="media-gallery" id="dok-gallery">
-        <img src="foto_dok_1.jpg" alt="Dokumentasi 1" class="protected-img" ondragstart="return false;">
-        <img src="foto_dok_2.jpg" alt="Dokumentasi 2" class="protected-img" ondragstart="return false;">
-      </div>
-    </div>
-    
-    <div class="modal-footer">
-      <button type="button" class="btn-secondary" onclick="closeModal('modal-dokumentasi')">Tutup</button>
-    </div>
-  </div>
-</dialog>
-
-<!-- ========================================== -->
-<!-- MODAL SERTIFIKAT -->
-<!-- ========================================== -->
-<dialog id="modal-sertifikat" class="protected-modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <div>
-        <p class="modal-subtitle">VERIFIKASI KOMPETENSI</p>
-        <h3 class="modal-title" id="cert-title">📜 Sertifikat Resmi</h3>
-      </div>
-      <button type="button" class="btn-close" onclick="closeModal('modal-sertifikat')">✕</button>
-    </div>
-    
-    <div class="modal-body">
-      <!-- Overlay Watermark Pengaman -->
-      <div class="watermark-overlay">OFFICIAL DOCUMENT • ADIESTI NURI AMANDA • RESTRICTED</div>
-      
-      <!-- Container Foto Sertifikat -->
-      <div class="media-gallery" id="cert-gallery">
-        <img src="foto_sertifikat_1.jpg" alt="Sertifikat 1" class="protected-img" ondragstart="return false;">
-      </div>
-    </div>
-    
-    <div class="modal-footer">
-      <button type="button" class="btn-secondary" onclick="closeModal('modal-sertifikat')">Tutup</button>
-    </div>
-  </div>
-</dialog>
-
-<!-- POP-UP MODAL PRATINJAU SERTIFIKAT -->
-<dialog id="cert-viewer-modal" class="protected-modal" style="border:none; background:transparent; padding:0; margin:auto; max-width:750px; width:92%;">
-  <div class="modal-content" style="background: #0a192f; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; padding: 1.5rem; color: #ffffff;">
-    
-    <!-- Header Modal -->
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
-      <div>
-        <p style="color: #fbbf24; margin: 0; font-size: 0.75rem; font-weight: 600;">🔒 PROTECTED OFFICIAL DOCUMENT</p>
-        <h3 id="cert-viewer-title" style="margin: 0; font-size: 1.25rem; color: #ffffff;">📜 Sertifikat Resmi</h3>
-      </div>
-      <button type="button" onclick="closeModal('cert-viewer-modal')" aria-label="Tutup" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
-    </div>
-    
-    <!-- Area Tampilan Berkas (Dinamis: PDF / Gambar) -->
-    <div style="position: relative; padding: 1rem 0; text-align: center;">
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-30deg); font-size: 0.85rem; font-weight: 700; color: rgba(255, 255, 255, 0.15); pointer-events: none; white-space: nowrap; z-index: 10;">CONFIDENTIAL • ADIESTI NURI AMANDA • DO NOT COPY</div>
-      
-      <!-- Konten disisipkan otomatis via JavaScript -->
-      <div id="cert-viewer-content" style="width: 100%; min-height: 480px;"></div>
-    </div>
-    
-    <!-- Footer Modal -->
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.75rem;">
-      <span style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">🔒 Mode Lihat-Saja. Dilarang mengunduh, mencetak, atau menyalin.</span>
-      <button type="button" class="button button-secondary" onclick="closeModal('cert-viewer-modal')" style="padding: 0.4rem 1rem; cursor: pointer;">Tutup</button>
-    </div>
-  </div>
-</dialog>
+      </dialog>
   </body>
 </html>
 
