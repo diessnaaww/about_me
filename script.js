@@ -1137,8 +1137,8 @@ document.addEventListener('click', function(event) {
 
 // Path lokasi file PDF CV Bahasa Indonesia & Inggris
 const cvFiles = {
-  id: 'assets/ind-cv-adis.pdf', // Ubah ke 'assets/IND_ CV_ ADIS_ DATA dan DIGITAL_3.pdf' jika file tersimpan dalam folder assets
-  en: 'assets/eng-cv-adis.pdf'
+  id: 'ind-cv-adis.pdf', 
+  en: 'eng-cv-adis.pdf'
 };
 
 // Fungsi Membuka Modal CV (Default memuat versi Bahasa Indonesia)
