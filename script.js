@@ -340,8 +340,8 @@ function closeNav() {
 // 5. MODAL CV (PRATINJAU DUAL BAHASA PDF)
 // ==========================================
 const cvFiles = {
-  id: "assets/ind-cv-adis.pdf",
-  en: "assets/eng-cv-adis.pdf"
+  id: "ind-cv-adis.pdf",
+  en: "eng-cv-adis.pdf"
 };
 
 function openCVPreview(defaultLang = "id") {
