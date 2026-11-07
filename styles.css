@@ -1196,3 +1196,172 @@ dialog#skills-modal .dialog-panel {
   color: #64ffda;
   transform: translate(3px, -3px);
 }
+
+/* Area Scrollable Modal */
+.modal-body {
+  overflow-y: auto;
+  max-height: 65vh;
+  margin-top: 1rem;
+  position: relative;
+}
+
+/* Transisi dan Efek Sensor Blur */
+.protected-img, .protected-pdf, #cert-viewer-content {
+  transition: filter 0.3s ease;
+}
+
+.blur-protection {
+  filter: blur(25px) grayscale(100%) !important;
+  pointer-events: none !important;
+}
+
+/* Sensor Blur Otomatis untuk Proteksi Dokumen */
+.protected-img, .protected-pdf, #cert-viewer-content, .modal-body {
+  transition: filter 0.25s ease;
+}
+
+.blur-protection {
+  filter: blur(30px) grayscale(100%) !important;
+  pointer-events: none !important;
+  user-select: none !important;
+}
+
+/* Sembunyikan Halaman Saat Dicetak / Print */
+@media print {
+  body {
+    display: none !important;
+  }
+}
+
+/* Menghilangkan scrollbar ganda pada modal pratinjau sertifikat */
+#cert-viewer-modal .modal-body {
+  overflow: hidden !important;
+  padding: 0.5rem 0;
+}
+
+#cert-viewer-modal .modal-content {
+  overflow: hidden !important;
+}
+
+/* ========================================== */
+/* STYLING RACUN BY ME & AFFILIATE MODAL      */
+/* ========================================== */
+.racun-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.racun-card {
+  background: #112240;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.racun-card:hover {
+  transform: translateY(-4px);
+  border-color: #ff79c6;
+  box-shadow: 0 10px 25px rgba(255, 121, 198, 0.15);
+}
+
+.racun-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background: #0d1d35;
+}
+
+.racun-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.racun-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(10, 25, 47, 0.85);
+  border: 1px solid #ff79c6;
+  color: #ff79c6;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.racun-content {
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.racun-content h3 {
+  font-size: 1rem;
+  margin: 0.3rem 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.racun-content p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #a8b2d1;
+  flex-grow: 1;
+}
+
+.racun-affiliate-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.btn-affiliate {
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-shopee {
+  background: rgba(238, 77, 45, 0.15);
+  border: 1px solid #ee4d2d;
+  color: #ff6b4a;
+}
+.btn-shopee:hover {
+  background: #ee4d2d;
+  color: #ffffff;
+}
+
+.btn-tokopedia {
+  background: rgba(3, 172, 14, 0.15);
+  border: 1px solid #03ac0e;
+  color: #4cd955;
+}
+.btn-tokopedia:hover {
+  background: #03ac0e;
+  color: #ffffff;
+}
+
+.btn-tiktok {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+.btn-tiktok:hover {
+  background: #ffffff;
+  color: #000000;
+}
