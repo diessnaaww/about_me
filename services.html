@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Layanan Profesional Adiesti Nuri Amanda — Data, Perencanaan, Digital, dan Komunikasi." />
+    <meta name="theme-color" content="#0A192F" />
+    <title>Services — Adiesti Nuri Amanda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Lewati ke konten utama</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navigasi utama">
+        <a class="brand" href="index.html#home" aria-label="Adiesti, beranda">ADIESTI<span>.</span></a>
+        <button class="menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only" data-i18n="openNav">Buka navigasi</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+
+        <!-- NAVIGASI UTAMA DENGAN LINK LANGSUNG KE SECTION INDEX.HTML -->
+        <div class="nav-links" id="nav-links">
+          <!-- BERANDA -->
+          <div class="nav-dropdown">
+            <a class="nav-direct" href="index.html#home" data-i18n="navHome" style="padding: 12px 0; font-weight: 500;">Beranda</a>
+            <button class="nav-dropdown-trigger" type="button" aria-expanded="false" aria-controls="home-menu" aria-label="Menu Beranda">
+              <span class="chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="dropdown-menu" id="home-menu">
+              <a href="index.html#about" data-i18n="navAbout">Tentang Saya</a>
+              <a href="index.html#education" data-i18n="navEducation">Pendidikan</a>
+              <div class="nested-dropdown">
+                <button class="nested-trigger" type="button" aria-expanded="false" aria-controls="experience-menu">
+                  <span data-i18n="navExperience">Pengalaman</span><span class="side-chevron" aria-hidden="true">▹</span>
+                </button>
+                <div class="nested-menu" id="experience-menu">
+                  <a href="index.html#work-exp" data-i18n="navWork">Pengalaman Kerja</a>
+                  <a href="index.html#org-exp" data-i18n="navOrg">Pengalaman Organisasi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STUDIO KARYA -->
+          <div class="nav-dropdown">
+            <a class="nav-direct" href="index.html#studio-proyek" data-i18n="navStudio" style="padding: 12px 0; font-weight: 500;">Studio</a>
+            <button class="nav-dropdown-trigger" type="button" aria-expanded="false" aria-controls="studio-menu" aria-label="Menu Studio">
+              <span class="chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="dropdown-menu" id="studio-menu">
+              <a href="index.html#studio-proyek" data-i18n="navTechnical">Proyek Technical</a>
+              <a href="index.html#studio-desain" data-i18n="navCreative">Desain &amp; Content</a>
+            </div>
+          </div>
+
+          <!-- SERTIFIKASI -->
+          <a class="nav-direct" href="index.html#certifications" data-i18n="navCertifications">Sertifikasi</a>
+
+          <!-- KONTAK -->
+          <a class="nav-direct" href="index.html#contact" data-i18n="navContact">Kontak</a>
+
+          <!-- PEMISAH & TOMBOL SERVICES TERPISAH -->
+          <span class="nav-divider" aria-hidden="true" style="opacity: 0.25; margin: 0 0.25rem;">|</span>
+          <a class="nav-direct nav-services-btn" href="services.html" data-i18n="navServices" style="color: #64ffda; border: 1px solid #64ffda; padding: 0.35rem 0.85rem; border-radius: 6px; font-weight: 600;">Services</a>
+        </div>
+
+        <!-- KONTROL BAHASA & TEMA -->
+        <div class="nav-controls">
+          <div class="language-switch" role="group" aria-label="Pilih bahasa">
+            <button class="language-button is-active" type="button" data-language="id" aria-pressed="true">ID</button>
+            <span aria-hidden="true">/</span>
+            <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="theme-toggle icon-button" type="button" aria-label="Ganti ke mode terang" title="Ganti tema">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z" /></svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO SERVICES -->
+      <section class="section container" style="padding-top: 8rem; padding-bottom: 2rem;">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="svcEyebrow">SERVICES &amp; EXPERTISE</p>
+          <h1 data-i18n="svcHeroTitle">Layanan Profesional <br /><span class="accent">&amp; Solusi Terintegrasi</span></h1>
+          <p class="section-intro" data-i18n="svcHeroIntro" style="margin-top: 1rem; max-width: 650px;">
+            Membantu kebutuhan bisnis, instansi, dan proyek Anda melalui integrasi analisis data, perencanaan wilayah, operasional administrasi, hingga komunikasi digital.
+          </p>
+        </div>
+      </section>
+
+      <!-- DAFTAR LAYANAN -->
+      <section class="section alternate">
+        <div class="container">
+          <div class="experience-grid">
+
+            <!-- SERVICE 1 -->
+            <article class="experience-card reveal">
+              <div class="experience-head">
+                <span class="experience-icon">📊</span>
+                <span class="card-kicker" data-i18n="svc1Kicker">DATA &amp; BUSINESS INTELLIGENCE</span>
+              </div>
+              <h3 data-i18n="svc1Title">Data Analytics &amp; Interactive Dashboard</h3>
+              <p class="muted" data-i18n="svc1Desc">
+                Pengolahan dan pembersihan data mentah (CSV/Excel) menjadi dashboard interaktif serta laporan insight analitis untuk mendukung pengambilan keputusan bisnis.
+              </p>
+              <ul style="margin: 1rem 0; padding-left: 1.2rem; font-size: 0.9rem; color: #a8b2d1; line-height: 1.6;">
+                <li data-i18n="svc1Item1">Pembersihan &amp; Manipulasi Data (Power Query, Pivot Table, VLOOKUP)</li>
+                <li data-i18n="svc1Item2">Pembuatan Dashboard Interaktif (Microsoft Excel &amp; Power BI)</li>
+                <li data-i18n="svc1Item3">AI Sentiment Analysis (Langflow &amp; Prompting LLM)</li>
+                <li data-i18n="svc1Item4">Pengolahan Data Ekonometrika &amp; Survei (Stata)</li>
+              </ul>
+              <div class="tag-list">
+                <span>Excel</span>
+                <span>Power BI</span>
+                <span>Stata</span>
+                <span>Langflow</span>
+              </div>
+              <div style="margin-top: 1.5rem;">
+                <a class="button button-primary" href="https://wa.link/13x4fm" target="_blank" rel="noopener noreferrer" data-i18n="svcDiscuss">Diskusi Layanan ↗</a>
+              </div>
+            </article>
+
+            <!-- SERVICE 2 -->
+            <article class="experience-card reveal">
+              <div class="experience-head">
+                <span class="experience-icon">🏛️</span>
+                <span class="card-kicker" data-i18n="svc2Kicker">PERENCANAAN &amp; OPERASIONAL</span>
+              </div>
+              <h3 data-i18n="svc2Title">Regional Planning &amp; Office Administration</h3>
+              <p class="muted" data-i18n="svc2Desc">
+                Dukungan operasional administrasi perkantoran, penyusunan berkas perencanaan daerah, audit anggaran, serta penyortiran kearsipan berskala besar.
+              </p>
+              <ul style="margin: 1rem 0; padding-left: 1.2rem; font-size: 0.9rem; color: #a8b2d1; line-height: 1.6;">
+                <li data-i18n="svc2Item1">Audit KAK/RSK &amp; Rekonsiliasi Sistem SIPD (Presisi 100%)</li>
+                <li data-i18n="svc2Item2">Pengelolaan &amp; Penyusunan Berkas Administrasi Kantor / Organisasi</li>
+                <li data-i18n="svc2Item3">Pengarsipan Digital &amp; Manajemen Database Terstruktur</li>
+                <li data-i18n="svc2Item4">Penyusunan Notulensi Rapat &amp; Korespondensi Resmi</li>
+              </ul>
+              <div class="tag-list">
+                <span>SIPD</span>
+                <span>KAK / RSK</span>
+                <span>Google Workspace</span>
+                <span>MS Office</span>
+              </div>
+              <div style="margin-top: 1.5rem;">
+                <a class="button button-primary" href="https://wa.link/13x4fm" target="_blank" rel="noopener noreferrer" data-i18n="svcDiscuss">Diskusi Layanan ↗</a>
+              </div>
+            </article>
+
+            <!-- SERVICE 3 -->
+            <article class="experience-card reveal">
+              <div class="experience-head">
+                <span class="experience-icon">🎨</span>
+                <span class="card-kicker" data-i18n="svc3Kicker">KREATIF &amp; MEDIA SOSIAL</span>
+              </div>
+              <h3 data-i18n="svc3Title">Digital Marketing &amp; Creative Content</h3>
+              <p class="muted" data-i18n="svc3Desc">
+                Perancangan strategi media sosial, pembuatan aset konten visual, copywriting, serta penyuntingan video promosi untuk mengoptimalkan impresi brand.
+              </p>
+              <ul style="margin: 1rem 0; padding-left: 1.2rem; font-size: 0.9rem; color: #a8b2d1; line-height: 1.6;">
+                <li data-i18n="svc3Item1">Manajemen Strategi Kampanye Media Sosial (Tersertifikasi BNSP)</li>
+                <li data-i18n="svc3Item2">Desain Grafis Konten (Feeds Instagram, Banner, Poster, Pamflet)</li>
+                <li data-i18n="svc3Item3">Video Editing Konten Vertikal (Reels / TikTok / CapCut)</li>
+                <li data-i18n="svc3Item4">Copywriting &amp; Optimization Identitas Digital (Linktree / Bio / Profile)</li>
+              </ul>
+              <div class="tag-list">
+                <span>Canva</span>
+                <span>CapCut</span>
+                <span>BNSP SMM</span>
+                <span>Adobe Illustrator</span>
+              </div>
+              <div style="margin-top: 1.5rem;">
+                <a class="button button-primary" href="https://wa.link/13x4fm" target="_blank" rel="noopener noreferrer" data-i18n="svcDiscuss">Diskusi Layanan ↗</a>
+              </div>
+            </article>
+
+            <!-- SERVICE 4 -->
+            <article class="experience-card reveal">
+              <div class="experience-head">
+                <span class="experience-icon">🎙️</span>
+                <span class="card-kicker" data-i18n="svc4Kicker">KOMUNIKASI &amp; ACARA</span>
+              </div>
+              <h3 data-i18n="svc4Title">Public Speaking &amp; Event Master of Ceremony</h3>
+              <p class="muted" data-i18n="svc4Desc">
+                Jasa pemandu acara (MC) formal maupun non-formal, fasilitasi orientasi/kegiatan publik, serta pelayanan relasi pelanggan (Customer Service/Frontliner).
+              </p>
+              <ul style="margin: 1rem 0; padding-left: 1.2rem; font-size: 0.9rem; color: #a8b2d1; line-height: 1.6;">
+                <li data-i18n="svc4Item1">Master of Ceremonies (MC) Acara Formal &amp; Non-Formal</li>
+                <li data-i18n="svc4Item2">Fasilitator Sesi Orientasi &amp; Public Relations</li>
+                <li data-i18n="svc4Item3">Service Excellence &amp; Customer Relationship Handling</li>
+              </ul>
+              <div class="tag-list">
+                <span>Public Speaking</span>
+                <span>MC</span>
+                <span>Service Excellence</span>
+              </div>
+              <div style="margin-top: 1.5rem;">
+                <a class="button button-primary" href="https://wa.link/13x4fm" target="_blank" rel="noopener noreferrer" data-i18n="svcDiscuss">Diskusi Layanan ↗</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION AKUN FREELANCER -->
+      <section class="section container" id="freelance-platforms">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="freelanceEyebrow">HIRE ME ON FREELANCE PLATFORMS</p>
+          <h2 data-i18n="freelanceTitle">Profil &amp; Akun <br /><span class="accent">Freelancer Resmi</span></h2>
+          <p class="section-intro" data-i18n="freelanceIntro" style="margin-top: 0.75rem; max-width: 650px;">
+            Anda dapat merekrut saya atau berdiskusi proyek secara langsung melalui platform freelance tepercaya berikut:
+          </p>
+        </div>
+
+        <div class="freelance-grid">
+          <a href="https://fastwork.id/byob/ENUo8ff8H9?openExternalBrowser=1&source=byob" target="_blank" rel="noopener noreferrer" class="freelance-card">
+            <div class="freelance-icon">⚡</div>
+            <div class="freelance-info">
+              <h3>Fastwork</h3>
+              <p data-i18n="fwDesc">Platform Freelance Indonesia</p>
+            </div>
+            <span class="freelance-arrow">↗</span>
+          </a>
+
+          <a href="https://hijob.work/en/cv/adiesti-amanda-MTgzNTktNDVmOTZhN2M" target="_blank" rel="noopener noreferrer" class="freelance-card">
+            <div class="freelance-icon">💼</div>
+            <div class="freelance-info">
+              <h3>Hijob</h3>
+              <p>Projects &amp; Service Marketplace</p>
+            </div>
+            <span class="freelance-arrow">↗</span>
+          </a>
+
+          <a href="https://www.peopleperhour.com/freelancer/adiesti-nuri_amanda-zxyaxnnv" target="_blank" rel="noopener noreferrer" class="freelance-card">
+            <div class="freelance-icon">🎨</div>
+            <div class="freelance-info">
+              <h3>PeoplePerHour</h3>
+              <p>Freelance Marketplace</p>
+            </div>
+            <span class="freelance-arrow">↗</span>
+          </a>
+
+          <a href="https://www.upwork.com/freelancers/~01eef4f761a40cd39e?mp_source=share" target="_blank" rel="noopener noreferrer" class="freelance-card">
+            <div class="freelance-icon">🟢</div>
+            <div class="freelance-info">
+              <h3>Upwork</h3>
+              <p>Global Freelance Marketplace</p>
+            </div>
+            <span class="freelance-arrow">↗</span>
+          </a>
+
+          <a href="https://www.fiverr.com/adiestnra/buying?source=avatar_menu_profile" target="_blank" rel="noopener noreferrer" class="freelance-card">
+            <div class="freelance-icon">✳️</div>
+            <div class="freelance-info">
+              <h3>Fiverr</h3>
+              <p>Digital Services Marketplace</p>
+            </div>
+            <span class="freelance-arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- SECTION CTA KONTAK -->
+      <section class="contact-section">
+        <div class="container contact-inner reveal">
+          <p class="eyebrow" data-i18n="svcCtaEyebrow">MULAI KOLABORASI</p>
+          <h2 data-i18n="svcCtaTitle">Punya Proyek yang Ingin <br /><span class="accent">Didiskusikan?</span></h2>
+          <p class="contact-description" data-i18n="svcCtaDesc">Hubungi saya untuk membahas kebutuhan layanan atau peluang kerja sama.</p>
+          <div class="contact-actions" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+            <a class="button button-primary contact-cta" href="mailto:adiestinuriaa@gmail.com">
+              📧 adiestinuriaa@gmail.com ↗
+            </a>
+            <a class="button button-primary contact-cta" href="https://wa.link/13x4fm" target="_blank" rel="noopener noreferrer">
+              📱 WhatsApp (no call) ↗
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="index.html#home">ADIESTI<span>.</span></a>
+        <p>© Adiesti Nuri Amanda.</p>
+        <a class="back-top" href="#main" data-i18n="backTop">Kembali ke atas ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
