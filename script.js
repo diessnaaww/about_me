@@ -341,9 +341,12 @@ window.goToCertSlide = goToCertSlide;
 // 7. DATA MEDIA SOSIAL & KARYA DINAMIS (DRY)
 // ==========================================
 const socialLinksData = [
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/adiestinuriaa" },
-  { name: "Telegram", url: "https://t.me/diessnaa" },
-  { name: "Email", url: "mailto:adiestinuriaa@gmail.com" }
+  { title: "Telegram", icon: "📲", url: "https://t.me/diessnaa" },
+  { title: "Instagram", icon: "📸", url: "https://instagram.com/diessnaaww" },
+  { title: "TikTok", icon: "🎵", url: "https://tiktok.com/@diessnaaww" },
+  { title: "Lemon8", icon: "🍋", url: "https://lemon8-app.com/diessnaaww" },
+  { title: "Threads", icon: "🧵", url: "https://threads.net/@diessnaaww" },
+  { title: "YouTube", icon: "▶️", url: "https://youtube.com/@adiestinuriamanda1276" }
 ];
 
 function renderSocialMedia() {
