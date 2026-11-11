@@ -357,7 +357,7 @@ th { color: var(--faint); font-size: .6rem; letter-spacing: .08em; text-transfor
 }
 
 /* MENCEGAH SELEKSI TEKS DAN SERET GAMBAR */
-.document-dialog, #cv-canvas-guard {
+.document-dialog {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1244,15 +1244,15 @@ dialog#skills-modal .dialog-panel {
 }
 
 /* ========================================== */
-/* STYLING RACUN BY ME & AFFILIATE MODAL      */
+/* STYLING koleksi BY ME & AFFILIATE MODAL      */
 /* ========================================== */
-.racun-grid {
+.koleksi-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1.25rem;
 }
 
-.racun-card {
+.koleksi-card {
   background: #112240;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
@@ -1262,13 +1262,13 @@ dialog#skills-modal .dialog-panel {
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.racun-card:hover {
+.koleksi-card:hover {
   transform: translateY(-4px);
   border-color: #ff79c6;
   box-shadow: 0 10px 25px rgba(255, 121, 198, 0.15);
 }
 
-.racun-img-wrap {
+.koleksi-img-wrap {
   position: relative;
   width: 100%;
   height: 160px;
@@ -1276,13 +1276,13 @@ dialog#skills-modal .dialog-panel {
   background: #0d1d35;
 }
 
-.racun-img {
+.koleksi-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.racun-badge {
+.koleksi-badge {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1296,27 +1296,27 @@ dialog#skills-modal .dialog-panel {
   backdrop-filter: blur(4px);
 }
 
-.racun-content {
+.koleksi-content {
   padding: 1.1rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.racun-content h3 {
+.koleksi-content h3 {
   font-size: 1rem;
   margin: 0.3rem 0 0.5rem 0;
   color: #ffffff;
 }
 
-.racun-content p {
+.koleksi-content p {
   font-size: 0.8rem;
   line-height: 1.5;
   color: #a8b2d1;
   flex-grow: 1;
 }
 
-.racun-affiliate-buttons {
+.koleksi-affiliate-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -1364,4 +1364,153 @@ dialog#skills-modal .dialog-panel {
 .btn-tiktok:hover {
   background: #ffffff;
   color: #000000;
+}
+
+/* Pengaturan Scroll Vertikal & Horizontal Modal Body */
+#cert-viewer-modal .modal-body {
+  max-height: 65vh;
+  overflow: auto !important;
+  padding: 0.5rem;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar Halus */
+#cert-viewer-modal .modal-body::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+#cert-viewer-modal .modal-body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+#cert-viewer-modal .modal-body::-webkit-scrollbar-thumb {
+  background: rgba(100, 255, 218, 0.4);
+  border-radius: 4px;
+}
+#cert-viewer-modal .modal-body::-webkit-scrollbar-thumb:hover {
+  background: #64ffda;
+}
+
+/* Pengaturan Scroll Vertikal & Horizontal Modal Body */
+#cert-viewer-modal .modal-body {
+  max-height: 65vh;
+  overflow: auto !important;
+  padding: 0.5rem;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+#cert-viewer-modal .modal-body::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+#cert-viewer-modal .modal-body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+#cert-viewer-modal .modal-body::-webkit-scrollbar-thumb {
+  background: rgba(100, 255, 218, 0.4);
+  border-radius: 4px;
+}
+#cert-viewer-modal .modal-body::-webkit-scrollbar-thumb:hover {
+  background: #64ffda;
+}
+
+/* ========================================== */
+/* STYLING TOOLBAR, SEARCH & FILTER ETALASE   */
+/* ========================================== */
+.etalase-header h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.etalase-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--muted);
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #ff79c6;
+  border-color: #ff79c6;
+  color: #0a192f;
+}
+
+.search-box input {
+  background: #112240;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0.55rem 1rem;
+  color: #ffffff;
+  font-size: 0.85rem;
+  outline: none;
+  min-width: 240px;
+  transition: border-color 0.2s ease;
+}
+
+.search-box input:focus {
+  border-color: #ff79c6;
+}
+
+.etalase-count-text {
+  font-size: 0.78rem;
+  color: var(--faint);
+  margin-bottom: 1.5rem;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.card-price {
+  color: #64ffda;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.card-rating {
+  font-size: 0.75rem;
+  color: #fbbf24;
+}
+
+.etalase-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--muted);
+}
+
+.btn-lazada {
+  background: rgba(15, 26, 214, 0.15);
+  border: 1px solid #0f1ad6;
+  color: #5364ff;
+}
+.btn-lazada:hover {
+  background: #0f1ad6;
+  color: #ffffff;
 }

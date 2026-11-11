@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0A192F" />
+    <title>Koleksi &amp; Rekomendasi — Adiesti Nuri Amanda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Navigasi Terintegrasi -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navigasi utama">
+        <a class="brand" href="index.html#home">ADIESTI<span>.</span></a>
+        
+        <!-- Tombol Menu Mobile -->
+        <button class="menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only" data-i18n="openNav">Buka navigasi</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a class="nav-direct" href="index.html#home" data-i18n="navHome">Beranda</a>
+          <a class="nav-direct" href="index.html#about" data-i18n="navAbout">Tentang Saya</a>
+          <a class="nav-direct" href="index.html#studio-proyek" data-i18n="navStudio">Studio</a>
+          <a class="nav-direct" href="index.html#certifications" data-i18n="navCertifications">Sertifikasi</a>
+          <a class="nav-direct" href="index.html#contact" data-i18n="navContact">Kontak</a>
+          <span class="nav-divider" style="opacity: 0.25; margin: 0 0.25rem;">|</span>
+          <a class="nav-direct" href="services.html" data-i18n="navServices" style="color: #64ffda; border: 1px solid #64ffda; padding: 0.35rem 0.75rem; border-radius: 6px; font-weight: 600;">Services</a>
+          <a class="nav-direct" href="Koleksi.html" data-i18n="navkoleksi" style="color: #ff79c6; border: 1px solid #ff79c6; padding: 0.35rem 0.75rem; border-radius: 6px; font-weight: 600;">Koleksi</a>
+        </div>
+
+        <!-- Kontrol Sakelar Bahasa & Mode Day/Night -->
+        <div class="nav-controls">
+          <div class="language-switch" role="group" aria-label="Pilih bahasa">
+            <button class="language-button is-active" type="button" data-language="id" aria-pressed="true">ID</button>
+            <span aria-hidden="true">/</span>
+            <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="theme-toggle icon-button" type="button" aria-label="Ganti ke mode terang" title="Ganti tema">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z" /></svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Konten Utama Etalase -->
+    <main id="main" style="padding-top: 8rem; padding-bottom: 4rem;">
+      <section class="container">
+        <!-- Header Etalase -->
+        <div class="etalase-header">
+          <p class="eyebrow" style="color: #ff79c6;" data-i18n="etalaseEyebrow">PERSONAL RECOMMENDATIONS · NON-ENDORSE</p>
+          <h1 data-i18n="etalaseTitle">Koleksi &amp; Rekomendasi Produk</h1>
+          <p style="color: #a8b2d1; max-width: 650px; margin-top: 0.5rem;" data-i18n="etalaseSubtitle">
+            Kumpulan produk favorit yang saya gunakan sehari-hari. Klik tombol marketplace pilihan Anda untuk membeli melalui tautan affiliate resmi saya!
+          </p>
+        </div>
+
+        <!-- Toolbar: Filter Kategori & Bar Pencarian -->
+        <div class="etalase-toolbar">
+          <div class="filter-tabs">
+            <button type="button" class="filter-btn active" data-category="all" data-i18n="filterAll">Semua</button>
+            <button type="button" class="filter-btn" data-category="workspace" data-i18n="filterWorkspace">Workspace</button>
+            <button type="button" class="filter-btn" data-category="gadget" data-i18n="filterGadget">Gadget &amp; Aksesoris</button>
+            <button type="button" class="filter-btn" data-category="lifestyle" data-i18n="filterLifestyle">Lifestyle</button>
+            <button type="button" class="filter-btn" data-category="buku" data-i18n="filterBuku">Buku &amp; Bacaan</button>
+          </div>
+
+          <div class="search-box">
+            <input type="text" id="etalase-search" placeholder="Cari nama produk..." aria-label="Cari Produk" />
+          </div>
+        </div>
+
+        <!-- Jumlah Hasil -->
+        <p id="etalase-count" class="etalase-count-text"></p>
+
+        <!-- Grid Etalase Tempat Card Dirender Secara Dinamis -->
+        <div id="etalase-grid" class="koleksi-grid"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="index.html#home">ADIESTI<span>.</span></a>
+        <div class="footer-socials"></div>
+        <p>© <span id="current-year"></span> Adiesti Nuri Amanda.</p>
+      </div>
+    </footer>
+  </body>
+</html>
