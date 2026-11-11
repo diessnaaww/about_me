@@ -701,6 +701,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // ==========================================
+  // RENDER OTOMATIS SOCIAL MEDIA FOOTER
+  // ==========================================
+  const socialContainer = document.querySelector(".footer-socials");
+  if (socialContainer) {
+    socialContainer.innerHTML = `
+      <a href="https://www.instagram.com/diessnaaww" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
+      <a href="https://www.threads.net/@diessnaaww" target="_blank" rel="noopener noreferrer">🧵 Threads</a>
+      <a href="https://www.tiktok.com/@diessnaaww" target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+    `;
+  }
+
   const filterButtons = document.querySelectorAll(".filter-btn");
   filterButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -748,3 +760,4 @@ document.addEventListener("DOMContentLoaded", () => {
   applyTheme(localStorage.getItem("portfolio-theme") !== "light");
   translatePage(language);
 });
+
